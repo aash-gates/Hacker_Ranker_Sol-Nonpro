@@ -27,4 +27,4 @@ for i in range(T):
     print(foo(text,k-1))
     
 
-                    
+ # end of the program                   
