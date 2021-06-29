@@ -2,10 +2,6 @@
 
 import math
 import os
-import random
-import re
-import sys
-
 
 def diagonalDifference(arr):
     diag1=0
