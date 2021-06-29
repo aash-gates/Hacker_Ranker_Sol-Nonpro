@@ -30,3 +30,4 @@ for i in range(2,n+1):
     A1 = (W - A3)
     #A2 = (S-W)
 print(W%p)
+
