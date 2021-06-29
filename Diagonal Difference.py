@@ -17,10 +17,7 @@ for x in range(int(len(arr))):
 
 
 
-def absDiagDiff(data):
-    return abs(diag(data)-diag(data,True))
 
-print(absDiagDiff(k))    # 20
 
 
 # end of the program
