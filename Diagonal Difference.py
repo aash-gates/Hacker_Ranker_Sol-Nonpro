@@ -1,7 +1,7 @@
 n = input()
 arr=[]
 for _ in range(n):
-temp = map(int,input().split())
+ temp = map(int,input().split())
 
 arr.append(temp)
 s1,s2 = 0,0
