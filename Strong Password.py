@@ -1,1 +1,1 @@
-# Hacker Rank Challenge based o
+# Hacker Rank Challenge based on Pyhton
