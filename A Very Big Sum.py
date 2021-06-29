@@ -8,3 +8,4 @@ for linenum, testnum in enumerate(sys.stdin):
         for num in testnum.split():
             ans += int(num)
 print(ans)
+
