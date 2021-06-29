@@ -7,3 +7,4 @@ while t>0:
     t=t-1
 print(num)
 
+#end of the program
