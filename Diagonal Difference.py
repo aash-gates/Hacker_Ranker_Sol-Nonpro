@@ -10,3 +10,4 @@ for i in range(n):
  s2 += array[-i-1][i]
 
 print (abs(s1-s2))
+
