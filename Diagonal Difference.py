@@ -9,10 +9,13 @@ import sys
 def diagonalDifference(arr):
     diag1=0
     diag2=0
-    
 
-print (diag(k))          # 64
-print(diag(k,True))      # 44
+for x in range(int(len(arr))):
+        y=list(reversed(list(range(len(arr[x])))))
+        diag1+=arr[x][x]
+        diag2+=arr[x][y[x]]
+
+
 
 def absDiagDiff(data):
     return abs(diag(data)-diag(data,True))
