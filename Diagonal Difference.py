@@ -1,8 +1,23 @@
 # Hacker Rank Challenge 5
+import math
+import os
+import random
+import re
+import sys
+
 
 def diagonalDifference(arr):
-    d1 = sum([arr[x][x] for x in range(len(arr))])
-    d2 = sum([arr[x][n - 1 - x] for x in range(len(arr))])
-    return(abs(d1 - d2))
+    diag1=0
+    diag2=0
+    
+
+print (diag(k))          # 64
+print(diag(k,True))      # 44
+
+def absDiagDiff(data):
+    return abs(diag(data)-diag(data,True))
+
+print(absDiagDiff(k))    # 20
+
 
 # end of the program
