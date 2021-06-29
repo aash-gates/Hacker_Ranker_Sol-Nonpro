@@ -9,3 +9,4 @@ for linenum, testnum in enumerate(sys.stdin):
             ans += int(num)
 print(ans)
 
+#end of the program
