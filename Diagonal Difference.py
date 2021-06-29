@@ -2,6 +2,7 @@ n = input()
 arr=[]
 for _ in range(n):
 temp = map(int,raw_input().split())
+
 arr.append(temp)
 s1,s2 = 0,0
 for i in range(n):
