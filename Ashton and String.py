@@ -25,4 +25,5 @@ for i in range(T):
     text = input().strip()
     k = int(input().strip())
     print(foo(text,k-1))
+    
                     
