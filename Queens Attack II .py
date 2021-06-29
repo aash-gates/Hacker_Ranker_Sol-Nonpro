@@ -24,3 +24,5 @@ for i in range(8):
         cur_x += mx[i]
     ans -= 1
 print (ans)
+
+#end of the program
