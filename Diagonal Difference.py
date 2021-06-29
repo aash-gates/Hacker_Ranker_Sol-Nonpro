@@ -1,4 +1,5 @@
 # Hacker Rank Challenge 5
+
 import math
 import os
 import random
