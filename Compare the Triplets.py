@@ -11,3 +11,5 @@ for x,y in zip(A,B):
     if x<y: bob += 1
 
 print(alice,bob)
+
+#end of the program
