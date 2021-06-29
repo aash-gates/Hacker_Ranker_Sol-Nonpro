@@ -1,4 +1,5 @@
 # Hacker Rank Challenge 5
+
 n = input()
 array=[]
 for _ in range(n):
