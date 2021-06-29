@@ -3,7 +3,7 @@ array=[]
 for _ in range(n):
  temp_ar = map(int,input().split())
 
-arr.append(temp_ar)
+array.append(temp_ar)
 s1,s2 = 0,0
 for i in range(n):
  s1 += array[i][i]
