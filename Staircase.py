@@ -1,1 +1,1 @@
-# Hacker Rank Challenge
+# Hacker Rank Challenge 6
