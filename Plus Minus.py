@@ -8,3 +8,5 @@ c3 = len([x for x in arr if x==0])
 print("%.7f" % (c1/n))
 print("%.7f" % (c2/n))
 print("%.7f" % (c3/n))
+
+#end of the program
