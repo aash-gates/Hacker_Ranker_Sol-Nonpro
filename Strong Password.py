@@ -40,3 +40,4 @@ if not contains(special_characters,word):
     val2 += 1 
     
 print max(val1,val2)
+
