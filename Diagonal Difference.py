@@ -1,3 +1,4 @@
+#
 n = input()
 array=[]
 for _ in range(n):
