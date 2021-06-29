@@ -18,3 +18,5 @@ for x in a:
     else:
         d[high] = x
 print(len(d))
+
+#end of the program
