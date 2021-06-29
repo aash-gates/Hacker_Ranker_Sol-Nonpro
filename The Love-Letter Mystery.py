@@ -7,4 +7,4 @@ for t in xrange(input()):
         res += abs(ord(s[i]) - ord(s[-i-1]))
     print res
     
-#
+#end of the program
