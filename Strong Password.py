@@ -41,3 +41,4 @@ if not contains(special_characters,word):
     
 print max(val1,val2)
 
+#end of the program
