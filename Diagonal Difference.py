@@ -11,4 +11,4 @@ for i in range(n):
 
 print (abs(s1-s2))
 
-#end of the program
+# end of the program
