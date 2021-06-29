@@ -31,3 +31,4 @@ for i in range(2,n+1):
     #A2 = (S-W)
 print(W%p)
 
+#end of the program
