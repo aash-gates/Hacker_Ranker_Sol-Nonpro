@@ -1,16 +1,19 @@
-aa,bb=0,0
-n,m=map(int,raw_input().split())
-a=map(int,raw_input().split())
-b=map(int,raw_input().split())
-ct=0
-for i in xrange(max(a),min(b)+1):
-for j in a:
-if i%j!=0:
-break
-else:
-for k in b:
-if k%i!=0:
-break
-else:
-ct+=1
-print ct
+using System;
+using System.Collections.Generic;
+using System.Linq;
+class Solution {
+static void Main(String[] args) {
+Console.ReadLine();
+var A = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse).ToList();
+var B = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse).ToList();
+
+int c = 0;
+
+for (int i = 1; i < 10000; i++) {
+if (A.Any(x => i % x != 0)) continue;
+if (B.Any(x => x % i != 0)) continue;
+c++;
+}
+Console.WriteLine(c);
+}
+}
