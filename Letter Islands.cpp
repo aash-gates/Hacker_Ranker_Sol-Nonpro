@@ -28,6 +28,7 @@ struct Pos {
     auto it = a.lower_bound(i);
     auto prev = it, next = it;
     if (it != a.begin()) --prev;
+    if (it != a.end()) ++next;
     if (it != prev) {
       d.insert(pii{*it-*prev, id++});
       if (it != next && next != a.end())
