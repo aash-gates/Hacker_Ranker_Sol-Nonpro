@@ -18,4 +18,3 @@ for i in range(n):
     if funny: print("Funny")
     else: print("Not Funny")
     
-    
