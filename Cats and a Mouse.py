@@ -11,4 +11,3 @@ for a0 in range(q):
         print('Cat A')
     else:
         print('Cat B')
-
