@@ -1,8 +1,14 @@
-from itertools import groupby
-n = int(input())
-c = list(map(int, input().split()))
-
-ans = 0
-for val in [len(list(group)) for key, group in groupby(sorted(c))]:
-    ans = ans + val/2
-print(ans)
+using System;
+using System.Collections.Generic;
+class Solution {
+static void Main(String[] args) {
+int n = int.Parse(Console.ReadLine());
+int[] A = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+Array.Sort(A);
+int ans = 0;
+for (int i = 1; i < n; i++) {
+if (A[i] == A[i - 1]) { ans++; i++; }
+}
+Console.WriteLine(ans);
+}
+}
