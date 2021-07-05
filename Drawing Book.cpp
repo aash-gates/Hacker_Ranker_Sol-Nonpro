@@ -1,35 +1,18 @@
-#include <map>
-#include <set>
-#include <list>
-#include <cmath>
-#include <ctime>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <string>
-#include <bitset>
-#include <cstdio>
-#include <limits>
-#include <vector>
-#include <climits>
-#include <cstring>
-#include <cstdlib>
-#include <fstream>
-#include <numeric>
-#include <sstream>
-#include <iostream>
-#include <algorithm>
-#include <unordered_map>
-
+#include<bits/stdc++.h>
 using namespace std;
 
+int main() {
+    int n, p, f, b;
 
-int main(){
-int n;
-cin >> n;
-int p;
-cin >> p;
-cout<<min(p/2,(n-p)/2);
-// your code goes here
-return 0;
+    cin >> n;
+    cin >> p;
+    assert(n>0 && n<=100000 && p>0 && p<=n);
+
+    f = p/2;
+    if(n%2 == 0)
+        b = (n-p+1)/2;
+    else
+        b = (n-p)/2;
+
+    cout << min(f, b) << "\n";
 }
