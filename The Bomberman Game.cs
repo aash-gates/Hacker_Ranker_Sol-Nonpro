@@ -78,7 +78,7 @@ class Solution {
         for (int i = 0; i < map.Length; ++i)
         {
             Console.Out.WriteLine(String.Join("", map[i]));
-        
+        }
     }
 
     private static void ClearCell(char[][] map,int r,int c)
