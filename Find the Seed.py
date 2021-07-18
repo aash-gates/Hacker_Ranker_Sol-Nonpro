@@ -81,3 +81,4 @@ inv = [[int(x) for x in y] for y in inv]
 ans = matpow(inv, k - n + 1)
 ans = mult(ans, left)
 print(' '.join(map(lambda x : str(x[0]), ans)))
+
