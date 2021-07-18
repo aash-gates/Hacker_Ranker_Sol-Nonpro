@@ -1,144 +1,83 @@
-using namespace std;
+MOD = 1000000007
 
-typedef long long ll;
+def generalizedEuclidianAlgorithm(a, b):
+    if b > a:
+        return generalizedEuclidianAlgorithm(b,a);
+    elif b == 0:
+        return (1, 0);
+    else:
+        (x, y) = generalizedEuclidianAlgorithm(b, a % b);
+        return (y, x - (a // b) * y)
 
-const long long MOD = 1e9 + 7;
+def inversemodp(a, p):
+    a = a % p
+    if a == 0:
+        return 0
+    (x, y) = generalizedEuclidianAlgorithm(p, a % p);
+    return y % p
 
- struct mat{
-    int f, c;
-    unsigned long long arr[102][102];
-    mat() {
-    memset(arr, 0, sizeof(arr));
-}
+def identitymatrix(n):
+    return [[int(x == y) for x in range(0, n)] for y in range(0, n)]
 
-mat operator*(const mat& a) {
-    mat sol;
-    sol.f = f;
-    sol.c = a.c;
-    for (int i = 0; i < f; i++)
-        for (int j = 0; j < a.c; j++)
-            for (int k = 0; k < c; k++)
-                sol.arr[i][j] = (sol.arr[i][j] + arr[i][k] * a.arr[k][j]) % MOD;
-    return sol;
-}
-};
+def multiply_vector_scalar(vector, scalar, q):
+    kq = []
+    for i in range (0, len(vector)):
+        kq.append(vector[i] * scalar % q)
+    return kq
 
-mat init, arr;
-mat sol1, sol2, ident;
+def minus_vector_scalar1(vector1, scalar, vector2, q):
+    kq = []
+    for i in range (0, len(vector1)):
+        kq.append((vector1[i] - scalar * vector2[i]) % q)
+    return kq
 
-long long GCDext(long long a, long long b, long long &x, long long &y) {
-    long long g = a;
-    x = 1;
-    y = 0;
-    if (b != 0) {
-        g = GCDext(b, a % b, y, x);
-        y -= (a / b) * x;
-    }
-    return g;
-}
+def inversematrix1(matrix, q):
+    n = len(matrix)
+    A =[]
+    for j in range (0, n):
+        temp = []
+        for i in range (0, n):
+            temp.append(matrix[j][i])
+        A.append(temp)
+    Ainv = identitymatrix(n)
+    for i in range(0, n):
+        factor = inversemodp(A[i][i], q)
+        A[i] = multiply_vector_scalar(A[i], factor, q)
+        Ainv[i] = multiply_vector_scalar(Ainv[i], factor, q)
+        for j in range(0, n):
+            if i != j:
+                factor = A[j][i]
+                A[j] = minus_vector_scalar1(A[j], factor, A[i], q)
+                Ainv[j] = minus_vector_scalar1(Ainv[j], factor,Ainv[i], q)
+    return Ainv
 
-long long invMod(long long a, long long m, long long &inv) {
-    long long x, y;
-    if (GCDext(a, m, x, y) != 1)
-        return 0;
-    inv = (x + m) % m;
-    return 1;
-}
+def mult(x, y):
+    c = [[0 for _ in range(len(y[0]))] for _ in range(len(x))]
+    for i in range(len(x)):
+        for j in range(len(y[0])):
+            for k in range(len(x)):
+                c[i][j] += x[i][k] * y[k][j]
+                c[i][j] = c[i][j] % MOD
+    return c
 
+def matpow(b, p):
+    if p == 0: return identitymatrix(n)
+    if p == 1: return b
+    if p % 2 == 1:
+        return mult(b, matpow(b, p - 1))
+    ret = matpow(b, p // 2)
+    return mult(ret, ret)
 
-mat POW(long long p) {
-    if(p == 0LL)
-        return ident;
-    if (p == 1LL)
-        return init;
-    if (p & 1LL) {
-        return POW(p - 1LL) * init;
-    }
-    mat k = POW(p / 2LL);
-    return k * k;
-}
-
-long long C[101][202];
-void InvMatMOD(int n) {
-    long long m, inv;
-    for (int i = 0; i < n - 1; i++) {
-        int fil = i;
-
-        for (int k = i + 1; k < n; k++) {
-            if (C[k][i] > C[fil][i])
-                fil = k;
-        }
-
-    if (fil > i) {
-        for (int k = 0; k < 2 * n; k++)
-            swap(C[fil][k], C[i][k]);
-    }
-
-    for (int k = i + 1; k < n; k++) {
-        invMod(C[i][i], MOD, inv);
-        m = (C[k][i] * inv) % MOD;
-        for (int j = 0; j < 2 * n; j++)
-            C[k][j] = (C[k][j] + MOD - (m * C[i][j]) % MOD) % MOD;
-    }
-}
-
-sol2.f = n;
-sol2.c = n;
-
-for (int j = 0; j < n; j++) {
-    int i = n;
-    do {
-        sol2.arr[i][j] = C[i][j + n];
-        for (int k = i + 1; k < n; k++)
-            sol2.arr[i][j] = (sol2.arr[i][j] + MOD - (C[i][k]
-                    * sol2.arr[k][j]) % MOD) % MOD;
-        invMod(C[i][i], MOD, m);
-        sol2.arr[i][j] = (sol2.arr[i][j] * m) % MOD;
-        i--;
-    } while (i >= 0);
-}
-}
-
-int f, c, n;
-long long k;
-
-int main() {
-    scanf("%d%lld", &n, &k);
-
-    ident.f = n;
-    ident.c = n;
-    for(int i = 0;i<n;i++)
-        ident.arr[i][i] = 1;
-
-    arr.f = 1;
-    arr.c = n;
-
-    for(int i = 0;i<n;i++)
-        scanf("%lld", &arr.arr[0][i]);
-
-    init.f = n;
-    init.c = n;
-
-    for(int i = 0;i<n;i++)
-        scanf("%lld", &init.arr[i][0]);
-
-    for(int i = 1;i<n;i++)
-        init.arr[i-1][i] = 1LL;
-
-    sol1 = POW(k - (long long) n + 1LL);
-
-    for(int i = 0;i<n;i++) {
-        for(int j = 0;j<n;j++)
-            C[i][j] = sol1.arr[i][j];
-        C[i][i+n] = 1;
-    }
-
-    InvMatMOD(n);
-
-    sol1 = arr * sol2;
-
-    for(int i = n-1;i>0;i--)
-        printf("%lld ", sol1.arr[0][i]);
-
-    printf("%lld ", sol1.arr[0][0]);
-}
+n, k = map(int, input().split())
+arrk = list(map(int, input().split()))
+arrc = list(map(int, input().split()))
+left = [[x] for x in arrk];
+middle = [[0 for _ in range(n)] for _ in range(n)]
+middle[0] = list(arrc)
+for i in range(1,n):
+    middle[i][i-1] = 1
+inv = inversematrix1(middle, MOD)
+inv = [[int(x) for x in y] for y in inv]
+ans = matpow(inv, k - n + 1)
+ans = mult(ans, left)
+print(' '.join(map(lambda x : str(x[0]), ans)))
