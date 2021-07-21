@@ -29,4 +29,4 @@ class Solution
             Console.WriteLine(status?"YES":"NO");
         }
     }
-}s
+}
