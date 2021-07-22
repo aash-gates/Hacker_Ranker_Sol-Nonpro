@@ -1,31 +1,38 @@
-function activityNotifications (expenditure, d) {
+def activityNotifications(expenditure, d):
+    total = 0
+    counts = [0] * 201
 
-    // Number of notifications
-    let n = 0
+    for day in range(d):
+        counts[expenditure[day]] += 1
 
-    // Set midpoints for median calculation
-    let [ i1, i2 ] = [ Math.floor((d-1)/2), Math.ceil((d-1)/2) ]
-    let m1, m2, m
+    if d%2 == 0: #even
+        odd = False
+    else: #odd
+        odd = True
 
-    // Initialize count sorted subarray
-    let cs = new Array(201).fill(0)
-    for (let i = d-1; i >= 0; i--) cs[expenditure[i]]++
+    oldest_day = 0
+    for i in range(d, len(expenditure)):
+        median = get_median(counts, odd, d)
+        if expenditure[i] >= 2*median:
+            total += 1
+        counts[expenditure[oldest_day]] -= 1
+        counts[expenditure[i]] += 1
+        oldest_day += 1
+    return total
 
-    // Iterate through expenditures
-    for (let i = d, l = expenditure.length; i < l; i++) {
-
-        // Find median
-        for (let j = 0, k = 0; k <= i1; k += cs[j], j++) m1 = j
-        for (let j = 0, k = 0; k <= i2; k += cs[j], j++) m2 = j
-        let m = (m1 + m2) / 2
-
-        // Check if notification is given
-        if (expenditure[i] >= m * 2) n++
-
-        // Replace subarray elements
-        cs[expenditure[i-d]]--
-        cs[expenditure[i]]++
-    }
-
-    return n
-}
+def get_median(counts, odd, d):
+    temp = 0
+    left, right = -1, -1
+    for i, v in enumerate(counts):
+        temp += v
+        if odd:
+            if temp >= ((d//2)+1):
+                return i
+        else:
+            if temp >= (d//2):
+                left = i
+            if temp > (d//2) and left != -1:
+                right = i
+                return (left + right) // 2
+            if temp > (d//2) and left == -1:
+                return i
