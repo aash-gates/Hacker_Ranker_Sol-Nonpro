@@ -1,33 +1,37 @@
-
-object Solution
-{
-	val in = {
-		val lines = scala.io.Source.stdin.getLines()
-		lines map (_ split ' ') filter (_.nonEmpty) flatten
-	}
-
-	def nextInt = in.next.toInt
+<?php
+  
+  	$_fp = fopen("php://stdin", "r");
+	$count = trim(fgets($_fp));
 	
-	def main(args: Array[String]): Unit = {
-
-		val T = nextInt
-		for (test <- 1 to T)
+  	for ($i = 0; $i < $count; ++$i)
+	{
+		$size = trim(fgets($_fp));
+		
+		$array = explode(' ', trim(fgets($_fp)));
+		$right = 0;
+		
+		for ($j = 0; $j < $size; ++$j)
 		{
+			$right += $array[$j];
+		}
 		
-			val N = nextInt
+		$left = 0;
+		$ans = 'NO';
+
+		for ($j = 0; $j < $size; ++$j)
+		{
+            $right -= $array[$j];
+            
+			if ($left == $right)
+			{
+				$ans = 'YES';
+				break;
+			}
+			
+			$left += $array[$j];
+		}
 		
-			val vals = Array.fill(N)(nextInt)
-		
-			val sums = vals.scanLeft(0)(_ + _)
-		
-			val totalSum = sums.last
-		
-			var ans = -1
-			for (i <- 1 until sums.length)
-				if (sums(i - 1) == totalSum - sums(i))
-					ans = i
-					
-			println(if (ans < 0) "NO" else "YES")
-		}	
+		print($ans.PHP_EOL);
 	}
-}
+  
+?>
