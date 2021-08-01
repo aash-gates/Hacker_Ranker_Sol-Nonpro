@@ -1,172 +1,116 @@
-//#define _GLIBCXX_DEBUG
 #include <bits/stdc++.h>
 using namespace std;
-#define pb push_back
-#define mp make_pair
-#define fst first
-#define snd second
-#define forn(i, n) for (int i = 0; i < int(n); ++i)
-typedef long long ll;
-typedef vector<int> vi;
-typedef vector<vi> vvi;
-typedef vector<ll> vll;
-typedef pair<int, int> pii;
-typedef vector<pii> vii;
-#define sz(c) (int)(c).size()
-#define ALL(c) (c).begin(), (c).end()
+const int MAXN = 200000;
+const long long INF = 1e15;
 
-struct town
-{
-    int x, y, h, p;
+long long tree[MAXN * 4];
 
-    bool operator < (const town &o) const
-    {
-        return h < o.h;
+void makeTree() {
+    for (int i = 1; i < MAXN * 4; ++i) {
+        tree[i] = -INF;
     }
-};
-
-struct segtree
-{
-    vll vals;
-    int tsz;
-
-    segtree ()
-    {
-        vals.clear();
-        tsz = 0;
+}
+void update(int x, long long val, int u = 1, int l = 1, int r = MAXN) {
+    if (l == r) {
+        tree[u] = val;
+        return;
     }
-
-    segtree (int n)
-    {
-        tsz = 1;
-        while (tsz <= n)
-            tsz *= 2;
-
-        vals.assign(2 * tsz, 0);
+    int m = (l + r) / 2;
+    if (x <= m) {
+        update(x, val, 2 * u, l, m);
     }
-
-    void put (int pos, ll what)
-    {
-        for (pos += tsz; pos > 0; pos >>= 1)
-            vals[pos] = max(vals[pos], what);
+    else {
+        update(x, val, 2 * u + 1, m + 1, r);
     }
-
-    ll query (int l, int r)
-    {
-        ll ans = 0;
-        for (l += tsz, r += tsz; l < r; l >>= 1, r >>= 1)
-        {
-            if (l & 1)
-                ans = max(ans, vals[l++]);
-            if (r & 1)
-                ans = max(ans, vals[--r]);
-        }
-        return ans;
-    }
-};
-
-struct segtree2d
-{
-    vvi who;
-    vector<segtree> data;
-    int tsz;
-
-    segtree2d (const vii &ps)
-    {
-        int X = 0;
-        const int n = sz(ps);
-        forn (i, n) X = max(X, ps[i].fst);
-
-        tsz = 1;
-        while (tsz <= X)
-            tsz *= 2;
-
-        data.resize(2 * tsz);
-        who.resize(2 * tsz);
-        forn (i, n)
-            who[ps[i].fst + tsz].pb(ps[i].snd);
-
-        for (int i = tsz; i < 2 * tsz; i++)
-            data[i] = segtree(sz(who[i]));
-
-        for (int i = tsz - 1; i >= 1; i--)
-        {
-            who[i].resize(sz(who[2 * i]) + sz(who[2 * i + 1]));
-            merge(ALL(who[2 * i]), ALL(who[2 * i + 1]), who[i].begin());
-            data[i] = segtree(sz(who[i]));
-        }
-    }
-
-    ll query (int v, int d, int u)
-    {
-        int rd = lower_bound(ALL(who[v]), d) - who[v].begin();
-        int ru = lower_bound(ALL(who[v]), u) - who[v].begin();
-        return data[v].query(rd, ru);
-    }
-
-    ll query (int l, int r, int d, int u)
-    {
-        r = min(r, tsz);
-        ll ans = 0;
-        for (l += tsz, r += tsz; l < r; l >>= 1, r >>= 1)
-        {
-            if (l & 1)
-                ans = max(ans, query(l++, d, u));
-            if (r & 1)
-                ans = max(ans, query(--r, d, u));
-        }
-        return ans;
-    }
-
-    void putnode (int v, int pos, ll what)
-    {
-        int cur = lower_bound(ALL(who[v]), pos) - who[v].begin();
-        assert(cur != sz(who[v]) && who[v][cur] == pos);
-        data[v].put(cur, what);
-    }
-
-    void put (int x, int y, ll what)
-    {
-        for (x += tsz; x > 0; x >>= 1)
-            putnode(x, y, what);
-    }
-};
-
-void solve (int n)
-{
-    int mx, my;
-    cin >> mx >> my;
-
-    vector<town> v(n);
-    forn (i, n)
-        cin >> v[i].x >> v[i].y >> v[i].h >> v[i].p;
-
-    sort(ALL(v));
-    vii ps(n);
-    forn (i, n) ps[i] = mp(v[i].x, v[i].y);
-
-    segtree2d data(ps);
-    vll dp(n);
-
-    forn (i, n)
-    {
-        int cx = v[i].x, cy = v[i].y;
-        int lx = max(0, cx - mx), ly = max(0, cy - my);
-        int rx = cx + mx, ry = cy + my;
-        dp[i] = data.query(lx, rx + 1, ly, ry + 1) + v[i].p;
-        data.put(cx, cy, dp[i]);
-    }
-
-    ll ans = max(0LL, *max_element(ALL(dp)));
-    cout << ans << endl;
+    tree[u] = max(tree[2 * u], tree[2 * u + 1]);
 }
 
-int main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
+long long query(int x, int y, int u = 1, int l = 1, int r = MAXN) {
+    if (x > r or y < l) {
+        return -INF;
+    }
+    if (x <= l and r <= y) {
+        return tree[u];
+    }
+    int m = (l + r) / 2;
+    return max(query(x, y, 2 * u, l, m), query(x, y, 2 * u + 1, m + 1, r));
+}
 
+struct Point {
+    int x, y, z, w;
+    long long dp;
+    bool operator < (const Point &o) const {
+        return z < o.z;
+    }
+};
+Point p[MAXN + 1];
+long long DP[MAXN + 1];
+int X_LIM, Y_LIM;
+void merge(int l, int r) {
+    int m = (l + r) / 2;
+
+    vector<pair<int, int> > left;
+    vector<pair<int, int> > right;
+    for (int i = l; i <= m; ++i) {
+        left.push_back({p[i].x, p[i].z});
+    }       
+    for (int i = m + 1; i <= r; ++i) {
+        right.push_back({p[i].x, p[i].z});
+    }
+    sort(left.begin(), left.end());
+    sort(right.begin(), right.end());
+
+    int left_l = 0;
+    int left_r = -1;
+    for (auto u : right) {
+        int i = u.second;
+        int x = u.first;
+        while (left_r + 1 < left.size() and left[left_r + 1].first - x <= X_LIM) {
+            ++left_r;
+            int who = left[left_r].second;
+            update(p[who].y, p[who].dp);            
+        }
+        while (left_l < left.size() and x - left[left_l].first > X_LIM) {
+            int who = left[left_l].second;
+            update(p[who].y, -INF);
+            ++left_l;
+        }
+        int yLow = max(1, p[i].y - Y_LIM);
+        int yHigh = min(MAXN, p[i].y + Y_LIM);
+        p[i].dp = max(p[i].dp, p[i].w + query(yLow, yHigh));
+    } 
+    while (left_l <= left_r) {
+        int who = left[left_l].second;
+        update(p[who].y, -INF);
+        ++left_l;
+    }
+}
+void solve(int l, int r) {
+    if (l == r) {
+        p[l].dp = max(p[l].dp, (long long)p[l].w);
+        return;
+    }
+    int m = (l + r) / 2;
+    solve(l, m);
+    merge(l, r);
+    solve(m + 1, r);
+}
+int main() {
+    makeTree();
     int n;
-    while (cin >> n)
-        solve(n);
+    scanf("%d %d %d", &n, &X_LIM, &Y_LIM); 
+    for (int i = 0; i < n; ++i) {
+        scanf("%d %d %d %d", &p[i].x, &p[i].y, &p[i].z, &p[i].w);
+        p[i].dp = -INF;
+    }
+    sort(p, p + n);
+    for (int i = 0; i < n; ++i) {
+        p[i].z = i;
+    }
+    solve(0, n - 1);
+    long long ans = 0;
+    for (int i = 0; i < n; ++i) {
+        ans = max(ans, p[i].dp);
+    }
+    printf("%lld\n", ans);
 }
