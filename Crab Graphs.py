@@ -1,110 +1,69 @@
-import sys
 
-__author__ = 'aash'
-
-
-class Solution:
-    C_MAX = 1000
-
-    def read_input(self, cin):
-        # N - # of vertices
-        # T - # of feed of a crab
-        # M - number of edges
-        self.N, self.T, M = [int(t) for t in cin.readline().split(' ', 2)]
-        '''
-        N - number of verices. Since we are only interested in crabs we can modify the graph,
-        so that from each vertex you can go through the adjacent edges only: from-vertex is map to an even number,
-        while to-vertex is mapped to an odd number. This splits the graph in crabs.
-        This also allows us to create a flow network graph. 
-        '''
-        self.adj_mtx = [[0 for j in range(self.map_odd(self.N))] for i in range(self.map_odd(self.N))]
-
-        for i in range(M):
-            f, t = [int(t) for t in cin.readline().split(' ', 1)]
-            f -= 1  # we need zero based indexing
-            t -= 1  # we need zero based indexing
-            # The capacity for each edge is infinite, i.e. greater than max T
-            self.adj_mtx[self.map_even(f)][self.map_odd(t)] = Solution.C_MAX
-            self.adj_mtx[self.map_even(t)][self.map_odd(f)] = Solution.C_MAX
-
-        '''
-        We need a source node and a sink node. Flow from the source node will go to any even node of the graph.
-        The capacity of the edge is set to T - size of the crab because if gone through the
-        the head of the crab will yield flow at the capacity. The capacity of the edges from odd node to the sink is 1
-        for the same reason.
-        '''
-
-        for i in range(self.N):
-            self.adj_mtx[0][self.map_even(i)] = self.T
-            self.adj_mtx[self.map_odd(i)][1] = 1
-
-    def max_vertices_covered(self):
-        '''
-        Use Edmonds–Karp algorithm to find max flow
-        '''
-        self.flow_mtx = [[0 for j in range(self.map_odd(self.N) + 1)] for i in range(self.map_odd(self.N) + 1)]
-
-        max_flow = 0
-        while True:
-            min_cap, path = self.bfs()
-            if not min_cap:
-                break
-            max_flow += min_cap
-            v = 1  # sink node
-            while v != 0:  # source node
-                u = path[v]
-                # forward direction
-                self.flow_mtx[u][v] += min_cap
-                # reverse direction
-                self.flow_mtx[v][u] -= min_cap
-                v = u
-
-        return max_flow
-
-    def bfs(self):
-        path = dict()
-        mins = {0: Solution.C_MAX * Solution.C_MAX}  # kind of infinity
-        queue = [0]  # queue with a single element - source
-
-        while len(queue):
-            u = queue.pop(0)  # FIFO, to pop the first one
-            for v, c in enumerate(self.adj_mtx[u]):
-                if c - self.flow_mtx[u][v] > 0 and v not in path:
-                    path[v] = u
-                    mins[v] = min(mins[u], c - self.flow_mtx[u][v])
-                    if v == 1:  # reached sink
-                        return mins[1], path
-                    else:
-                        queue.append(v)
-
-        return 0, path
-
-    @staticmethod
-    def map_even(a):
-        return (a << 1) + 2
+from collections import defaultdict, deque
 
 
-    @staticmethod
-    def map_odd(a):
-        return (a << 1) + 3
+def breadth_first_search(G, P, S, T, N):
+    V     = defaultdict(int)
+    Q     = deque([S])
+
+    V[S] += 1
+    P[S]  = -1
+
+    while Q:
+        u = Q.popleft()
+        for v in range(N):
+            if V[v] == 0 and G[u][v] > 0:
+                Q.append(v)
+                P[v]  = u
+                V[v] += 1
+
+    return V[T] == 1
+
+
+def floyd_fulkerson(G, S, T, N):
+    P = [0 for _ in range(N)]
+    M = 0
+
+    while breadth_first_search(G, P, S, T, N):
+        F = float('inf')
+
+        v = T
+        while v != S:
+            u = P[v]
+            F = min(F, G[u][v])
+            v = P[v]
+
+        v = T
+        while v != S:
+            u        = P[v]
+            G[u][v] -= F
+            G[v][u] += F
+            v        = P[v]
+
+        M += F
+
+    return M
+
+
+def main():
+    T = int(input())
+
+    for _ in range(T):
+        N, T, M = [int(i) for i in input().split()]
+
+        E       = [[0 for _ in range((2 * N) + 2)] for _ in range((2 * N) + 2)]
+
+        for _ in range(M):
+            a, b = [int(i) for i in input().split()]
+            E[(2 * a)][(2 * b) + 1] = 1
+            E[(2 * b)][(2 * a) + 1] = 1
+
+        for n in range(1, N + 1):
+            E[0][(2 * n)]     = T
+            E[(2 * n) + 1][1] = 1
+
+        print(floyd_fulkerson(E, 0, 1, (2 * N) + 2))
 
 
 if __name__ == "__main__":
-
-    cin = None
-
-    if len(sys.argv) > 1:
-        cin = open(sys.argv[1])
-    else:
-        cin = sys.stdin
-
-    C = int(cin.readline())
-    while C:
-        s = Solution()
-        s.read_input(cin)
-        print(s.max_vertices_covered())
-
-        C -= 1
-
-    if cin is not sys.stdin:
-        cin.close()
+    main()
