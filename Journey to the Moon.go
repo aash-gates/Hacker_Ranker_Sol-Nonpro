@@ -30,6 +30,7 @@ func main() {
 		p[n].visited = true
 		c := int64(0)
 		toprocess := []int{n}
+		for len(toprocess) > 0 {
 			curr := p[toprocess[0]]
 			toprocess = toprocess[1:]
 			c++
