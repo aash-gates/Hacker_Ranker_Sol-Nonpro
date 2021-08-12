@@ -1,15 +1,6 @@
 
 
-    Hackerrank Home
-    Prepare
-    NEW
-    Certify
-    Compete
-    Apply
-
-    1
-    wojem71401
-
+  
     PrepareAlgorithmsGraph TheorySynchronous ShoppingEditorial
 
 Synchronous Shopping
