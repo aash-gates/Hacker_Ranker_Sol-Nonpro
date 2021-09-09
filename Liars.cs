@@ -87,3 +87,4 @@ class Solution
         Dictionary<long, int> min = new Dictionary<long, int>();
         Dictionary<long, int> max = new Dictionary<long, int>();
         min[first.gethash()] = max[first.gethash()] = 0;
+        cl.Add(first);
