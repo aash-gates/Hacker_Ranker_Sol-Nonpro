@@ -43,3 +43,4 @@ class Solution
     {
         new Solution().calc();
     }
+
