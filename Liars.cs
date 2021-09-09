@@ -76,3 +76,4 @@ class Solution
         int[] start = new int[M];
         int[] goal = new int[M];
         int[] need = new int[M];
+        for (int i = 0; i < M; i++)
