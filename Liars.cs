@@ -11,3 +11,4 @@ class Scanner
 
     public Scanner()
     {
+        s = new string[0];
