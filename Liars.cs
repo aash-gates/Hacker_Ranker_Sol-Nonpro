@@ -108,4 +108,5 @@ class Solution
 
                 for (int k = 0; k < 2; k++)
                 {
+                    bool ok = true;
                     if (k == 1)
