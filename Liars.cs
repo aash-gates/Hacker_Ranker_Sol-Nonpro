@@ -95,3 +95,4 @@ class Solution
             for (int j = 0; j < M; j++)
             {
                 if (start[j] == i) l.Add(j);
+                if (goal[j] == i) rem.Add(j);
