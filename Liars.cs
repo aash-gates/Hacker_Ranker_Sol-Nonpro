@@ -144,3 +144,25 @@ class Solution
             {
                 l.Remove(item);
 
+            }
+
+            min = nmin;
+            max = nmax;
+            cl = ncl;
+        }
+        int retmin = 1000;
+        int retmax = 0;
+        foreach (var item in min.Values)
+        {
+            retmin = Math.Min(retmin, item);
+        }
+        foreach (var item in max.Values)
+        {
+            retmax = Math.Max(retmax, item);
+        }
+        Console.WriteLine(retmin + " " + retmax);
+    }
+
+
+}
+
