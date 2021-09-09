@@ -15,3 +15,4 @@ class Scanner
         i = 0;
     }
 
+    public string next()
