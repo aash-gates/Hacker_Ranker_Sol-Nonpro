@@ -94,3 +94,4 @@ class Solution
             List<int> rem = new List<int>();
             for (int j = 0; j < M; j++)
             {
+                if (start[j] == i) l.Add(j);
