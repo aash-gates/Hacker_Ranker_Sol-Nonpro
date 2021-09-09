@@ -82,3 +82,4 @@ class Solution
             goal[i] = cin.nextInt() - 1;
             need[i] = cin.nextInt();
         }
+        List<C> cl = new List<C>();
