@@ -26,3 +26,4 @@ class Scanner
     public int nextInt()
     {
         return int.Parse(next());
+    }
