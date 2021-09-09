@@ -120,3 +120,4 @@ class Solution
                     {
                         if (nums[item] != need[item])
                         {
+                            ok = false;
