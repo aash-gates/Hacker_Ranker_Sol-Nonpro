@@ -52,3 +52,4 @@ class Solution
 
         public C(int[] _nums)
         {
+            flag = false;
