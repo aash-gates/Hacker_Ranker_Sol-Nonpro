@@ -57,3 +57,4 @@ class Solution
         }
 
         public long gethash()
+        {
