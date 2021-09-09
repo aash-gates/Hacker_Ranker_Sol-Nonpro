@@ -138,3 +138,4 @@ class Solution
                         nmin[next.gethash()] = mi;
                         nmax[next.gethash()] = ma;
                     }
+                }
