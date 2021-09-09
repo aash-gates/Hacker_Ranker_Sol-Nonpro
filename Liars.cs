@@ -60,3 +60,4 @@ class Solution
         {
             if (flag) return hash;
             hash = 0; flag = true;
+            foreach (var item in nums)
