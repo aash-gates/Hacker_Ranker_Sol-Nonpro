@@ -66,3 +66,4 @@ class Solution
             }
             return hash;
         }
+    }
