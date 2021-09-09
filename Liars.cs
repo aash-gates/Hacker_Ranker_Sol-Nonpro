@@ -112,3 +112,4 @@ class Solution
                     if (k == 1)
                     {
                         foreach (var item in l)
+                        {
