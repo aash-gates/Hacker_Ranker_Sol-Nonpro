@@ -140,3 +140,4 @@ class Solution
                     }
                 }
             }
+            foreach (var item in rem)
