@@ -105,3 +105,4 @@ class Solution
                 int[] nums = (int[])now.nums.Clone();
                 int mi = min[now.gethash()];
                 int ma = max[now.gethash()];
+
