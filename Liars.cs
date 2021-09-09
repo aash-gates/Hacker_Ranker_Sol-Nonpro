@@ -44,3 +44,4 @@ class Solution
         new Solution().calc();
     }
 
+    class C
