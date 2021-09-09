@@ -27,3 +27,4 @@ class Scanner
     {
         return int.Parse(next());
     }
+    public long nextLong()
