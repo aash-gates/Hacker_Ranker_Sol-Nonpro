@@ -126,3 +126,4 @@ class Solution
                     }
                     if (!ok) continue;
                     mi += k; ma += k;
+                    C next = new C(nums);
