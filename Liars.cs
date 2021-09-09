@@ -132,3 +132,4 @@ class Solution
                         if (nmin[next.gethash()] > mi) nmin[next.gethash()] = mi;
                         if (nmax[next.gethash()] < ma) nmax[next.gethash()] = ma;
                     }
+                    else
