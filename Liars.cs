@@ -85,3 +85,4 @@ class Solution
         List<C> cl = new List<C>();
         C first = new C(new int[M]);
         Dictionary<long, int> min = new Dictionary<long, int>();
+        Dictionary<long, int> max = new Dictionary<long, int>();
