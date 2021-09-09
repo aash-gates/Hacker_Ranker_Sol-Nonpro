@@ -139,3 +139,4 @@ class Solution
                         nmax[next.gethash()] = ma;
                     }
                 }
+            }
