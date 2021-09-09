@@ -102,3 +102,4 @@ class Solution
             List<C> ncl = new List<C>();
             foreach (var now in cl)
             {
+                int[] nums = (int[])now.nums.Clone();
