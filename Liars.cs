@@ -29,3 +29,4 @@ class Scanner
     }
 
     public long nextLong()
+    {
