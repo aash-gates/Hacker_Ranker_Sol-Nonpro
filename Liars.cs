@@ -7,3 +7,4 @@ class Scanner
     string[] s;
     int i;
 
+    char[] cs = new char[] { ' ' };
