@@ -74,3 +74,4 @@ class Solution
         int N = cin.nextInt();
         int M = cin.nextInt();
         int[] start = new int[M];
+        int[] goal = new int[M];
