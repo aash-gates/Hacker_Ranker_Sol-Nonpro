@@ -40,3 +40,4 @@ class Solution
     Scanner cin;
 
     public static void Main()
+    {
