@@ -70,3 +70,4 @@ class Solution
 
     void calc()
     {
+        cin = new Scanner();
