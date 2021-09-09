@@ -92,3 +92,4 @@ class Solution
         for (int i = 0; i < N; i++)
         {
             List<int> rem = new List<int>();
+            for (int j = 0; j < M; j++)
