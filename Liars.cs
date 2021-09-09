@@ -59,3 +59,4 @@ class Solution
         public long gethash()
         {
             if (flag) return hash;
+            hash = 0; flag = true;
