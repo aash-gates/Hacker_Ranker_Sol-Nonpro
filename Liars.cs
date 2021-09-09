@@ -79,3 +79,4 @@ class Solution
         for (int i = 0; i < M; i++)
         {
             start[i] = cin.nextInt() - 1;
+            goal[i] = cin.nextInt() - 1;
