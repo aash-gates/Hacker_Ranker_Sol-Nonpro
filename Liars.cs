@@ -71,3 +71,4 @@ class Solution
     void calc()
     {
         cin = new Scanner();
+        int N = cin.nextInt();
