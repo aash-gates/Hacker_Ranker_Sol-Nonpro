@@ -69,3 +69,4 @@ class Solution
     }
 
     void calc()
+    {
