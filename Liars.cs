@@ -98,3 +98,4 @@ class Solution
                 if (goal[j] == i) rem.Add(j);
             }
             Dictionary<long, int> nmin = new Dictionary<long, int>();
+            Dictionary<long, int> nmax = new Dictionary<long, int>();
