@@ -53,3 +53,4 @@ class Solution
         public C(int[] _nums)
         {
             flag = false;
+            nums = (int[])_nums.Clone();
