@@ -124,3 +124,4 @@ class Solution
                             break;
                         }
                     }
+                    if (!ok) continue;
