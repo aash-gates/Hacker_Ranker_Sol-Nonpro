@@ -42,3 +42,4 @@ class Solution
     public static void Main()
     {
         new Solution().calc();
+    }
