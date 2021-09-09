@@ -125,3 +125,4 @@ class Solution
                         }
                     }
                     if (!ok) continue;
+                    mi += k; ma += k;
