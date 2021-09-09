@@ -65,3 +65,4 @@ class Solution
                 hash = hash * (long)12361717111 + item * (long)738173493019;
             }
             return hash;
+        }
