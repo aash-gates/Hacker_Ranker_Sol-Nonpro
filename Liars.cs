@@ -17,3 +17,4 @@ class Scanner
 
     public string next()
     {
+        if (i < s.Length) return s[i++];
