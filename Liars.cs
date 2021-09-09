@@ -137,3 +137,4 @@ class Solution
                         ncl.Add(next);
                         nmin[next.gethash()] = mi;
                         nmax[next.gethash()] = ma;
+                    }
