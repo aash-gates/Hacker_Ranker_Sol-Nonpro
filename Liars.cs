@@ -114,3 +114,4 @@ class Solution
                         foreach (var item in l)
                         {
                             nums[item] += 1;
+                        }
