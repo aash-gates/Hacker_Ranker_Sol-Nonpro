@@ -50,3 +50,4 @@ class Solution
         public bool flag;
         public int[] nums;
 
+        public C(int[] _nums)
