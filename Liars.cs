@@ -37,3 +37,4 @@ class Scanner
 
 class Solution
 {
+    Scanner cin;
