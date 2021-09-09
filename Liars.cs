@@ -83,3 +83,4 @@ class Solution
             need[i] = cin.nextInt();
         }
         List<C> cl = new List<C>();
+        C first = new C(new int[M]);
