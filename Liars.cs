@@ -128,3 +128,4 @@ class Solution
                     mi += k; ma += k;
                     C next = new C(nums);
                     if (nmin.ContainsKey(next.gethash()))
+                    {
