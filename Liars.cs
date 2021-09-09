@@ -106,3 +106,4 @@ class Solution
                 int mi = min[now.gethash()];
                 int ma = max[now.gethash()];
 
+                for (int k = 0; k < 2; k++)
