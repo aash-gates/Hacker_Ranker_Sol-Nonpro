@@ -75,3 +75,4 @@ class Solution
         int M = cin.nextInt();
         int[] start = new int[M];
         int[] goal = new int[M];
+        int[] need = new int[M];
