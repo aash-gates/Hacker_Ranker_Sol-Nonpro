@@ -73,3 +73,4 @@ class Solution
         cin = new Scanner();
         int N = cin.nextInt();
         int M = cin.nextInt();
+        int[] start = new int[M];
