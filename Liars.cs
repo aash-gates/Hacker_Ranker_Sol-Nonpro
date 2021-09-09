@@ -51,3 +51,4 @@ class Solution
         public int[] nums;
 
         public C(int[] _nums)
+        {
