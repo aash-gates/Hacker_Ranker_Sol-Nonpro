@@ -56,3 +56,4 @@ class Solution
             nums = (int[])_nums.Clone();
         }
 
+        public long gethash()
