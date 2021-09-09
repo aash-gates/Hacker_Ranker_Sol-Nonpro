@@ -9,3 +9,4 @@ class Scanner
 
     char[] cs = new char[] { ' ' };
 
+    public Scanner()
