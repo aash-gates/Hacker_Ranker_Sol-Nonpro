@@ -14,3 +14,4 @@ class Scanner
         s = new string[0];
         i = 0;
     }
+
