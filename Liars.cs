@@ -100,3 +100,4 @@ class Solution
             Dictionary<long, int> nmin = new Dictionary<long, int>();
             Dictionary<long, int> nmax = new Dictionary<long, int>();
             List<C> ncl = new List<C>();
+            {
