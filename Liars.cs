@@ -116,3 +116,4 @@ class Solution
                             nums[item] += 1;
                         }
                     }
+                    foreach (var item in rem)
