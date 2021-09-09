@@ -130,3 +130,4 @@ class Solution
                     if (nmin.ContainsKey(next.gethash()))
                     {
                         if (nmin[next.gethash()] > mi) nmin[next.gethash()] = mi;
+                        if (nmax[next.gethash()] < ma) nmax[next.gethash()] = ma;
