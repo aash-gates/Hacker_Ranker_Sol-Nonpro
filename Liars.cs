@@ -58,3 +58,4 @@ class Solution
 
         public long gethash()
         {
+            if (flag) return hash;
