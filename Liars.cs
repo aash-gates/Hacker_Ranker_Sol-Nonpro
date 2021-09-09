@@ -16,3 +16,4 @@ class Scanner
     }
 
     public string next()
+    {
