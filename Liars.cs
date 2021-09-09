@@ -32,3 +32,4 @@ class Scanner
     {
         return long.Parse(next());
     }
+
