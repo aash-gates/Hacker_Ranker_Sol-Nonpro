@@ -54,3 +54,4 @@ class Solution
         {
             flag = false;
             nums = (int[])_nums.Clone();
+        }
