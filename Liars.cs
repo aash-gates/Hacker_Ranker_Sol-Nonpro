@@ -63,3 +63,4 @@ class Solution
             foreach (var item in nums)
             {
                 hash = hash * (long)12361717111 + item * (long)738173493019;
+            }
