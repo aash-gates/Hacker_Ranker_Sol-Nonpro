@@ -23,3 +23,4 @@ class Scanner
         return s[i++];
     }
 
+    public int nextInt()
