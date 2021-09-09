@@ -18,3 +18,4 @@ class Scanner
     public string next()
     {
         if (i < s.Length) return s[i++];
+        s = Console.ReadLine().Split(cs, StringSplitOptions.RemoveEmptyEntries);
