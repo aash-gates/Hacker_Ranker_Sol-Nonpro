@@ -129,3 +129,4 @@ class Solution
                     C next = new C(nums);
                     if (nmin.ContainsKey(next.gethash()))
                     {
+                        if (nmin[next.gethash()] > mi) nmin[next.gethash()] = mi;
