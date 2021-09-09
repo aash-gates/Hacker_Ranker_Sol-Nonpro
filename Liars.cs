@@ -46,3 +46,4 @@ class Solution
 
     class C
     {
+        public long hash;
