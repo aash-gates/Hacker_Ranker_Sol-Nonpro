@@ -81,3 +81,4 @@ class Solution
             start[i] = cin.nextInt() - 1;
             goal[i] = cin.nextInt() - 1;
             need[i] = cin.nextInt();
+        }
