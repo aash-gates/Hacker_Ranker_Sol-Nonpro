@@ -107,3 +107,4 @@ class Solution
                 int ma = max[now.gethash()];
 
                 for (int k = 0; k < 2; k++)
+                {
