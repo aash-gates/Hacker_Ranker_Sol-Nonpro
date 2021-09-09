@@ -143,3 +143,4 @@ class Solution
             foreach (var item in rem)
             {
                 l.Remove(item);
+
