@@ -134,3 +134,4 @@ class Solution
                     }
                     else
                     {
+                        ncl.Add(next);
