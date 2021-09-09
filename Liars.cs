@@ -103,3 +103,4 @@ class Solution
             foreach (var now in cl)
             {
                 int[] nums = (int[])now.nums.Clone();
+                int mi = min[now.gethash()];
