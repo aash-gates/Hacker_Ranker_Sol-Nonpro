@@ -119,3 +119,4 @@ class Solution
                     foreach (var item in rem)
                     {
                         if (nums[item] != need[item])
+                        {
