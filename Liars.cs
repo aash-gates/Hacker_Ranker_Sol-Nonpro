@@ -21,3 +21,4 @@ class Scanner
         s = Console.ReadLine().Split(cs, StringSplitOptions.RemoveEmptyEntries);
         i = 0;
         return s[i++];
+    }
