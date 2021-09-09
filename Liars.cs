@@ -91,3 +91,4 @@ class Solution
         List<int> l = new List<int>();
         for (int i = 0; i < N; i++)
         {
+            List<int> rem = new List<int>();
