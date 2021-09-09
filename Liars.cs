@@ -47,3 +47,4 @@ class Solution
     class C
     {
         public long hash;
+        public bool flag;
