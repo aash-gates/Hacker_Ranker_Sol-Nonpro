@@ -6,3 +6,4 @@ class Scanner
 {
     string[] s;
     int i;
+
