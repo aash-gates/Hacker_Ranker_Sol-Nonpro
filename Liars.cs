@@ -135,3 +135,4 @@ class Solution
                     else
                     {
                         ncl.Add(next);
+                        nmin[next.gethash()] = mi;
