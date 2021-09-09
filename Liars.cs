@@ -111,3 +111,4 @@ class Solution
                     bool ok = true;
                     if (k == 1)
                     {
+                        foreach (var item in l)
