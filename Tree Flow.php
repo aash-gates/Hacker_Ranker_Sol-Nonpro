@@ -56,7 +56,7 @@ function processDis($startNode, &$distanceMap, &$connectMap, &$queue, $n)
         $nowDis = intval($item[1]);
         unset($queue[$nowIndex++]);
         $distanceMap[$nowNode] = $nowDis;
-        foreach ($connectMap[$nowNode] as $nextNode => $dis) { // 继续遍历
+        foreach ($connectMap[$nowNode] as $nextNode => $dis) { 
             if (isset($flagArr[$nextNode])) {
                 continue;
             }
