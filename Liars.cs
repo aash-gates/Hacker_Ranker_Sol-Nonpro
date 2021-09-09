@@ -24,3 +24,4 @@ class Scanner
     }
 
     public int nextInt()
+    {
