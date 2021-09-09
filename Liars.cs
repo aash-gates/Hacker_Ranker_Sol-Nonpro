@@ -89,3 +89,4 @@ class Solution
         min[first.gethash()] = max[first.gethash()] = 0;
         cl.Add(first);
         List<int> l = new List<int>();
+        for (int i = 0; i < N; i++)
