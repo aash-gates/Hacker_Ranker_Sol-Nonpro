@@ -97,3 +97,4 @@ class Solution
                 if (start[j] == i) l.Add(j);
                 if (goal[j] == i) rem.Add(j);
             }
+            Dictionary<long, int> nmin = new Dictionary<long, int>();
