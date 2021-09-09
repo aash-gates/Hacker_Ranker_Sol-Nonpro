@@ -8,3 +8,4 @@ class Scanner
     int i;
 
     char[] cs = new char[] { ' ' };
+
