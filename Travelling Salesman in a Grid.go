@@ -95,5 +95,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 		}
 
 		// Add connection to left and down.
+		newConn := copyBytes(conn)
+		newConn[c] = byte(cellIdx)
 	run(os.Stdin, os.Stdout)
 }
