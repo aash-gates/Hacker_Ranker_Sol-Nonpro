@@ -89,5 +89,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 		// No connections leading to current cell.
 
 		if c == cols-1 {
+			// We're at the right edge of the grid;
+			// unable to add new connection.
 	run(os.Stdin, os.Stdout)
 }
