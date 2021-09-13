@@ -124,3 +124,7 @@ object Solution {
 			}
 		}
 		if (false) {
+			print("new ids: ");
+			var first: Boolean = true;
+			{
+				var i: Int = 0;
