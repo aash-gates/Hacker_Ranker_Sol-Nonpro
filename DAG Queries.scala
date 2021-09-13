@@ -200,4 +200,7 @@ object Solution {
 		codes: Array[Long],
 		add: Array[Int],
 		min: Array[Int],
+		result: IntArrayList
+	): Unit = {
+		val nV: Int = parents.length;
 		{
