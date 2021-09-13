@@ -26,3 +26,4 @@ until s.empty?
     l << u
     s.delete u
 end
+
