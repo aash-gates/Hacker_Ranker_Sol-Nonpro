@@ -333,3 +333,8 @@ object Solution {
 		val min: Array[Int] = new Array[Int](1 << 14);
 		val result: IntArrayList = new IntArrayList();
 		val MAX12Q = 8 * 14;
+		var first: Int = 0;
+		var n12q: Int = 0;
+		val nQ: Int = queries.length;
+		{
+			var i: Int = 0;
