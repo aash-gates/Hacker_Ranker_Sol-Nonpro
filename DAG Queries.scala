@@ -278,3 +278,7 @@ object Solution {
 					}
 				} else {
 					Assert.check(qType == 2); // min
+					var code: Int = 0;
+					while (code < extra) {
+						add(code + extra) = add(code);
+						min(code + extra) = Math.min(value, min(code));
