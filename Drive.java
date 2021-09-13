@@ -28,3 +28,8 @@ public class Drive {
     static void saveNitro(step[] steps,Queue<run> runs,int nitroLimit){
         long targetSaving = totalDistance(steps) - nitroLimit;
         run r;
+        int s;
+        int x;
+        
+        while(0<targetSaving){
+            r = runs.poll();
