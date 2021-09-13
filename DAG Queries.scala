@@ -189,4 +189,8 @@ object Solution {
 				i += 1;
 			}
 		}
+	}
+
+	def process(
+		parents: Array[IntArrayList],
 		{
