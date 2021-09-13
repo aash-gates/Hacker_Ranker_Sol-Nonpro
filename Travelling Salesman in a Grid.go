@@ -163,5 +163,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 			// would make a closed path circumventing
 			// starting cell. We can only connect two
 			// ends of the same path at the very last cell.
+			return nil, nil
+		}
+
 	run(os.Stdin, os.Stdout)
 }
