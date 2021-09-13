@@ -163,3 +163,6 @@ object Solution {
 					var ip: Int = 0;
 					while (ip < parents(i).size) {
 						val p: Int = parents(i).get(ip);
+						orderedParents(orderedId(i)).add(orderedId(p));
+						ip += 1;
+					}
