@@ -22,3 +22,4 @@ until s.empty?
     graph[u].each { |v|
         rgraph[v].delete u
         s << v if rgraph[v].empty?
+    }
