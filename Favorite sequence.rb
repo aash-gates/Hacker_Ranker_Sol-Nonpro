@@ -19,3 +19,4 @@ l = []
 
 until s.empty?
     u = s.take(1)[0]
+    graph[u].each { |v|
