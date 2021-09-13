@@ -10,3 +10,5 @@ begin
     f[p,1]:=y;
     f[p,2]:=l[x];
     f[l[x],3]:=p;
+    l[x]:=p;
+end;
