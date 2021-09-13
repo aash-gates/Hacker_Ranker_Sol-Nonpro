@@ -397,3 +397,5 @@ object Solution {
 		{
 			var i: Int = 0;
 			while (i < result.size) {
+				println(result.get(i));
+				i += 1;
