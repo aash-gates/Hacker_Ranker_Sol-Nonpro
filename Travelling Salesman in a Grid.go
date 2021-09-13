@@ -69,5 +69,7 @@ func simplify(arg []byte) []byte {
 	return result
 }
 
+func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]byte, []int) {
+
 	run(os.Stdin, os.Stdout)
 }
