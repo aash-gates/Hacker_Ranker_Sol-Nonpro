@@ -108,3 +108,7 @@ object Solution {
 						if (ip.get(ip.size - 1) == parents(cur).size) {
 							orderedId(cur) = nextId;
 							nextId += 1;
+							stack.size -= 1;
+							ip.size -= 1;
+						} else {
+							val p: Int = parents(cur).get(ip.get(ip.size - 1));
