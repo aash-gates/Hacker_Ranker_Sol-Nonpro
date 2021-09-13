@@ -55,5 +55,7 @@ func simplify(arg []byte) []byte {
 	mm := map[byte]byte{}
 	for _, a := range arg {
 		if _, ok := mm[a]; !ok {
+			mm[a] = byte(len(mm))
+		}
 	run(os.Stdin, os.Stdout)
 }
