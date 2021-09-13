@@ -46,3 +46,7 @@ class Scanner(is: java.io.InputStream) {
 		return value;
 	}
 }
+
+class IntArrayList {
+
+
