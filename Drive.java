@@ -153,3 +153,9 @@ public class Drive {
 class passenger{
     public
     int arrival;
+    int start;
+    int dest;
+}
+
+class step{
+public
