@@ -193,5 +193,8 @@ func compute(rows, cols int, cs []cell) int {
 
 	connections := map[string]int{string(firstConn): 0}
 	for r := 0; r < rows; r++ {
+		for c := 0; c < cols; c++ {
+
+			connections2 := map[string]int{}
 	run(os.Stdin, os.Stdout)
 }
