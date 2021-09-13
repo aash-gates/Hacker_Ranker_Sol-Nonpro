@@ -76,3 +76,7 @@ object Solution {
 		val startOrder: Array[Int] = new Array[Int](nV);
 		{
 			var i: Int = 0;
+			while (i < nV) {
+				startOrder(i) = i;
+				i += 1;
+			}
