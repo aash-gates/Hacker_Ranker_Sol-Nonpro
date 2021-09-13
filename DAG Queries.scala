@@ -282,3 +282,6 @@ object Solution {
 					while (code < extra) {
 						add(code + extra) = add(code);
 						min(code + extra) = Math.min(value, min(code));
+						code += 1;
+					}
+				}
