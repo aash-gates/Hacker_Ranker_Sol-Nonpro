@@ -14,3 +14,7 @@ class Scanner(is: java.io.InputStream) {
 
 	var pos: Int = 0;
 
+	def nextChar(): Int = {
+		if (pos == len) {
+			val read: Int = is.read(buffer);
+			if (read == -1) {
