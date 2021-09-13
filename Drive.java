@@ -73,3 +73,8 @@ public class Drive {
                 run r = new run();
                 r.station = i;
                 r.deadline = steps[i+1].departure - steps[i].departure;
+                r.carrying = steps[i+1].dropped;
+                runs.add(r);
+            }
+        }
+    }
