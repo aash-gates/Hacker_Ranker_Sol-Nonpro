@@ -143,3 +143,8 @@ public class Drive {
             System.out.println("departure : "+String.valueOf(s.departure));
             System.out.println("distance : "+String.valueOf(s.distance));
             System.out.println("travel time : "+String.valueOf(s.travelTime));
+            System.out.println("picked up : "+String.valueOf(s.pickedUp));
+            System.out.println("dropped : "+String.valueOf(s.dropped));
+            System.out.println("carried : "+String.valueOf(s.carried));
+        }
+    }
