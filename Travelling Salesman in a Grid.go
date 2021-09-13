@@ -222,5 +222,7 @@ func run(in io.Reader, out io.Writer) {
 	rows, cols, cs := read(s)
 	result := compute(rows, cols, cs)
 	fmt.Fprintln(out, result)
+}
+
 	run(os.Stdin, os.Stdout)
 }
