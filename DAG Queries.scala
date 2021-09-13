@@ -358,3 +358,8 @@ object Solution {
 		val nV: Int = in.nextInt();
 		val nE: Int = in.nextInt();
 		val nQ: Int = in.nextInt();
+		val parents: Array[IntArrayList] = new Array[IntArrayList](nV);
+		{
+			var i: Int = 0;
+			while (i < nV) {
+				parents(i) = new IntArrayList();
