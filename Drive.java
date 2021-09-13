@@ -48,3 +48,8 @@ public class Drive {
             }
         }
     }
+    
+    static long totalDistance(step[] steps){
+        long distance=0;
+        for(step s : steps){
+            distance += s.distance;
