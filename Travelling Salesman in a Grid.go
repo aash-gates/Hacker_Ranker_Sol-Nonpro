@@ -208,5 +208,7 @@ func compute(rows, cols int, cs []cell) int {
 				}
 			}
 
+			connections = connections2
+		}
 	run(os.Stdin, os.Stdout)
 }
