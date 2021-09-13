@@ -128,3 +128,7 @@ object Solution {
 			var first: Boolean = true;
 			{
 				var i: Int = 0;
+				while (i < nV) {
+					if (first) {
+						first = false;
+					} else {
