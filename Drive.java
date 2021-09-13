@@ -79,3 +79,8 @@ public class Drive {
         }
     }
     
+    static long passengerTime(step[] steps,passenger[] passengers){
+        long total = 0;
+        for(passenger p : passengers){
+            total += steps[p.dest-1].departure + steps[p.dest-1].travelTime - p.arrival;
+        }
