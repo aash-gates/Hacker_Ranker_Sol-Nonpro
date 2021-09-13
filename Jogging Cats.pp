@@ -34,3 +34,5 @@ begin
         dec(num[x]);
         if num[x]=1 then
         begin
+            inc(j);bfs[j]:=x;
+        end;
