@@ -328,3 +328,8 @@ object Solution {
 			}
 		}
 		val a: Array[Int] = new Array[Int](nV);
+		val codes: Array[Long] = new Array[Long](100000 * 2);
+		val add: Array[Int] = new Array[Int](1 << 14);
+		val min: Array[Int] = new Array[Int](1 << 14);
+		val result: IntArrayList = new IntArrayList();
+		val MAX12Q = 8 * 14;
