@@ -232,3 +232,6 @@ object Solution {
 			var i: Int = 0;
 			while (i < n) {
 				val node: Int = queries(q12.get(i)).node;
+				val word: Int = i / 56;
+				val shift: Int = i % 56 / 14 * 16 + i % 14; // 14 used bits, 2 free
+				codes(node * 2 + word) |= 1L << shift;
