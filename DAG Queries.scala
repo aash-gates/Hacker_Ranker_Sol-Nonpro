@@ -71,3 +71,8 @@ class Query(val typ: Int, val node: Int, val value: Int) {}
 
 object Solution {
 
+	def reorder(parents: Array[IntArrayList], queries: Array[Query]): Unit = {
+		val nV: Int = parents.size;
+		val startOrder: Array[Int] = new Array[Int](nV);
+		{
+			var i: Int = 0;
