@@ -6,3 +6,4 @@ vertices = SortedSet.new
 
 gets.to_i.times {
     gets; last = nil
+    gets.split.map(&:to_i).each { |x|
