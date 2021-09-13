@@ -363,3 +363,8 @@ object Solution {
 			var i: Int = 0;
 			while (i < nV) {
 				parents(i) = new IntArrayList();
+				i += 1;
+			}
+		}
+		{
+			var i: Int = 0;
