@@ -67,5 +67,7 @@ func simplify(arg []byte) []byte {
 	}
 
 	return result
+}
+
 	run(os.Stdin, os.Stdout)
 }
