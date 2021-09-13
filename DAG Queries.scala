@@ -313,3 +313,8 @@ object Solution {
 
 	def solveFast(parents: Array[IntArrayList], queries: Array[Query]): IntArrayList = {
 		val nV: Int = parents.length;
+		{
+			var i: Int = 0;
+			while (i < nV) {
+				{
+					var ip: Int = 0;
