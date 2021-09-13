@@ -213,3 +213,7 @@ object Solution {
 				q += 1;
 			}
 		}
+		if (q12.size == 0) {
+			var q: Int = qFirst;
+			while (q < qAfter) {
+				Assert.check(queries(q).typ == 3);
