@@ -41,3 +41,6 @@ public class Drive {
             steps[s].travelTime += x;
             r.deadline -= x;
             targetSaving -= x;
+            if ((0<s) && (0 < r.deadline)){
+                r.carrying += steps[s].dropped;
+                r.station--;
