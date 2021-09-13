@@ -88,3 +88,8 @@ public class Drive {
     }
     
     
+    static void calcDepartures(step[] steps){
+        int t = 0;
+        for (step s : steps){
+            if(s.departure < t){
+                s.departure = t;
