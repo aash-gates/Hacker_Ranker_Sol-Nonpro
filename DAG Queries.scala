@@ -104,3 +104,7 @@ object Solution {
 					stack.add(startOrder(i));
 					ip.add(0);
 					while (stack.size > 0) {
+						val cur: Int = stack.a(stack.size - 1);
+						if (ip.get(ip.size - 1) == parents(cur).size) {
+							orderedId(cur) = nextId;
+							nextId += 1;
