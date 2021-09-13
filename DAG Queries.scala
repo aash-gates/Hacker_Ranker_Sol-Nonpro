@@ -274,3 +274,7 @@ object Solution {
 					while (code < extra) {
 						add(code + extra) = 1000 * 1000 * 1000;
 						min(code + extra) = value;
+						code += 1;
+					}
+				} else {
+					Assert.check(qType == 2); // min
