@@ -54,3 +54,7 @@ class IntArrayList {
 	var size: Int = 0;
 	
 	def add(x: Int): Unit = {
+		if (size == a.length) {
+			a = java.util.Arrays.copyOf(a, a.length * 2);
+		}
+		a(size) = x;
