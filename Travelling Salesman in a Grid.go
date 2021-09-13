@@ -23,5 +23,7 @@ func read(s *bufio.Scanner) (int, int, []cell) {
 	rows := readInt(s)
 	cols := readInt(s)
 
+	cs := make([]cell, rows*cols)
+
 	run(os.Stdin, os.Stdout)
 }
