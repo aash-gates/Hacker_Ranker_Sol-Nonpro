@@ -133,3 +133,8 @@ public class Drive {
             passengers[i] = new passenger();
             passengers[i].arrival = scan.nextInt();
             passengers[i].start = scan.nextInt()-1;
+            passengers[i].dest = scan.nextInt()-1;
+        }
+    }
+    
+    static void printStations(step[] steps){
