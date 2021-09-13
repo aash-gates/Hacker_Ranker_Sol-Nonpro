@@ -185,4 +185,8 @@ object Solution {
 				val node: Int = queries(i).node;
 				val value: Int = queries(i).value;
 				Assert.check(0 <= node && node < nV);
+				queries(i) = new Query(typ, orderedId(node), value);
+				i += 1;
+			}
+		}
 		{
