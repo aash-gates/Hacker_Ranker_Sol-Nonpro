@@ -378,3 +378,13 @@ object Solution {
 		val queries: Array[Query] = new Array[Query](nQ);
 		{
 			var i: Int = 0;
+			while (i < nQ) {
+				val qType: Int = in.nextInt();
+				if (qType == 1 || qType == 2) {
+					val parent: Int = in.nextInt() - 1;
+					val value: Int = in.nextInt();
+					queries(i) = new Query(qType, parent, value);
+				} else {
+					Assert.check(qType == 3);
+					val node: Int = in.nextInt() - 1;
+					queries(i) = new Query(qType, node, -1);
