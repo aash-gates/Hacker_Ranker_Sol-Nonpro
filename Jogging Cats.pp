@@ -16,3 +16,5 @@ procedure delpoint(a:longint);
 var
     k,kk,x:longint;
 begin
+    kk:=l[a];
+    while kk<>0 do
