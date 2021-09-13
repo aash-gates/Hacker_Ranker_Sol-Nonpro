@@ -93,3 +93,8 @@ public class Drive {
         for (step s : steps){
             if(s.departure < t){
                 s.departure = t;
+            }else{
+                t = s.departure;
+            }
+            t+=s.travelTime;
+        }
