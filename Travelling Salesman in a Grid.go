@@ -214,5 +214,7 @@ func compute(rows, cols int, cs []cell) int {
 	return connections[string(firstConn)]
 }
 
+func run(in io.Reader, out io.Writer) {
+
 	run(os.Stdin, os.Stdout)
 }
