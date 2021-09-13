@@ -343,3 +343,18 @@ object Solution {
 					n12q += 1;
 				}
 				if (n12q == MAX12Q || i == nQ - 1) {
+					process(parents, queries, first, i + 1, a, codes, add, min, result);
+					first = i + 1;
+					n12q = 0;
+				}
+				i += 1;
+			}
+		}
+		return result;
+	}
+
+	def main(args: Array[String]): Unit = {
+		val in: Scanner = new Scanner(System.in);
+		val nV: Int = in.nextInt();
+		val nE: Int = in.nextInt();
+		val nQ: Int = in.nextInt();
