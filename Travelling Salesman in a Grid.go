@@ -61,5 +61,7 @@ func simplify(arg []byte) []byte {
 
 	result := copyBytes(arg)
 	for i := range result {
+		if arg[i] != noConn {
+			result[i] = mm[arg[i]]
 	run(os.Stdin, os.Stdout)
 }
