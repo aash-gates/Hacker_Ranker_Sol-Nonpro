@@ -18,3 +18,7 @@ class Scanner(is: java.io.InputStream) {
 		if (pos == len) {
 			val read: Int = is.read(buffer);
 			if (read == -1) {
+				return -1;
+			}
+			len = read;
+			pos = 0;
