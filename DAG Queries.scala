@@ -159,4 +159,5 @@ object Solution {
 		{
 			var i: Int = 0;
 			while (i < nV) {
+				{
 					var ip: Int = 0;
