@@ -66,3 +66,8 @@ class IntArrayList {
 		return a(i);
 	}
 }
+
+class Query(val typ: Int, val node: Int, val value: Int) {}
+
+object Solution {
+
