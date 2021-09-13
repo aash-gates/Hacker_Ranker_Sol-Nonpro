@@ -224,3 +224,7 @@ object Solution {
 			}
 			return;
 		}
+		val n: Int = q12.size;
+		Assert.check(n <= 8 * 14);
+		Assert.check(nV <= 100000);
+		java.util.Arrays.fill(codes, 0, nV * 2, 0);
