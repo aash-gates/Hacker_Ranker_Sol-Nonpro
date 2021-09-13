@@ -338,3 +338,8 @@ object Solution {
 		val nQ: Int = queries.length;
 		{
 			var i: Int = 0;
+			while (i < nQ) {
+				if (queries(i).typ < 3) {
+					n12q += 1;
+				}
+				if (n12q == MAX12Q || i == nQ - 1) {
