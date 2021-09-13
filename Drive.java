@@ -59,3 +59,12 @@ public class Drive {
     
     static void printruns(Queue<run> runs){
         for(run r : runs){
+            System.out.println("~~~~~~~~");
+            System.out.println("station : "+String.valueOf(r.station));
+            System.out.println("deadline : "+String.valueOf(r.deadline));
+            System.out.println("tocarry : "+String.valueOf(r.carrying));
+        }
+    }
+    
+    static void findruns(Queue<run> runs,step[] steps){
+        steps[steps.length-1].departure = 2000000000;
