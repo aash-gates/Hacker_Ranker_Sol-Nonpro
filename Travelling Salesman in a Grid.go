@@ -151,5 +151,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 		//newConn[c] = conn[c] // Already true, because connection from top.
 		newWs = append(newWs, w+cell.down)
 		newConns = append(newConns, newConn)
+
+		return newConns, newWs
+
 	run(os.Stdin, os.Stdout)
 }
