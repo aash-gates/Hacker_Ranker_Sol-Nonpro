@@ -224,5 +224,6 @@ func run(in io.Reader, out io.Writer) {
 	fmt.Fprintln(out, result)
 }
 
+func main() {
 	run(os.Stdin, os.Stdout)
 }
