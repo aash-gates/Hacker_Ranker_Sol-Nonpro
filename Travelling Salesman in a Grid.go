@@ -11,5 +11,7 @@ import (
 type cell struct {
 	right int
 	down  int
+}
+
 	run(os.Stdin, os.Stdout)
 }
