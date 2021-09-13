@@ -35,5 +35,7 @@ func read(s *bufio.Scanner) (int, int, []cell) {
 	for i := 0; i < rows-1; i++ {
 		for j := 0; j < cols; j++ {
 			idx := i*cols + j
+			cs[idx].down = readInt(s)
+		}
 	run(os.Stdin, os.Stdout)
 }
