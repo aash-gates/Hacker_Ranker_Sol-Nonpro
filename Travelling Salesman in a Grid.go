@@ -45,5 +45,7 @@ func read(s *bufio.Scanner) (int, int, []cell) {
 const noConn = 255
 
 func copyBytes(in []byte) []byte {
+	result := make([]byte, len(in))
+	copy(result, in)
 	run(os.Stdin, os.Stdout)
 }
