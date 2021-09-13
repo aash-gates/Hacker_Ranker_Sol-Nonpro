@@ -96,3 +96,7 @@ object Solution {
 		java.util.Arrays.fill(orderedId, -1);
 		val stack: IntArrayList = new IntArrayList();
 		val ip: IntArrayList = new IntArrayList();
+		var nextId: Int = 0;
+		{
+			var i: Int = 0;
+			while (i < nV) {
