@@ -203,4 +203,5 @@ object Solution {
 		result: IntArrayList
 	): Unit = {
 		val nV: Int = parents.length;
+		val q12: IntArrayList = new IntArrayList();
 		{
