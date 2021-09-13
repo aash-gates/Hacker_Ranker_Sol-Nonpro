@@ -27,3 +27,4 @@ until s.empty?
     s.delete u
 end
 
+puts l.map(&:to_s).join(" ")
