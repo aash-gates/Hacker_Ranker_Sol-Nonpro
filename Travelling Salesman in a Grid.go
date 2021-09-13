@@ -187,5 +187,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 func compute(rows, cols int, cs []cell) int {
 
 	firstConn := make([]byte, cols+1)
+	for i := range firstConn {
+		firstConn[i] = noConn
+	}
 	run(os.Stdin, os.Stdout)
 }
