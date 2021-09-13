@@ -42,3 +42,19 @@ begin
     l[a]:=0;
 end;
 procedure delone;
+var
+    k,x:longint;
+begin
+    while i<>j do
+    begin
+        inc(i);
+        if num[bfs[i]]=0 then continue;
+        dec(num[bfs[i]]);
+        k:=l[bfs[i]];
+        l[bfs[i]]:=0;
+        x:=f[k,1];
+        k:=k xor 1;
+        if f[k,3]=0 then
+        begin
+            l[x]:=f[k,2];
+            f[f[k,2],3]:=0;
