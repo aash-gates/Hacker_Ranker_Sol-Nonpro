@@ -20,3 +20,5 @@ begin
     while kk<>0 do
     begin
         x:=f[kk,1];
+        k:=kk xor 1;
+        if f[k,3]=0 then
