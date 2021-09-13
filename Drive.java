@@ -38,3 +38,6 @@ public class Drive {
             if(x>r.deadline){x=r.deadline;}
             if(x>targetSaving){x=(int)targetSaving;}
             
+            steps[s].travelTime += x;
+            r.deadline -= x;
+            targetSaving -= x;
