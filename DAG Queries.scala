@@ -237,3 +237,7 @@ object Solution {
 				codes(node * 2 + word) |= 1L << shift;
 				i += 1;
 			}
+		}
+		{
+			var i: Int = 0;
+			while (i < nV) {
