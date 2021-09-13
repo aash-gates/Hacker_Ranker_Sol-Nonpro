@@ -88,3 +88,7 @@ object Solution {
 				val j: Int = rnd.nextInt(i + 1);
 				val t: Int = startOrder(i);
 				startOrder(i) = startOrder(j);
+				startOrder(j) = t;
+				i -= 1;
+			}
+		}
