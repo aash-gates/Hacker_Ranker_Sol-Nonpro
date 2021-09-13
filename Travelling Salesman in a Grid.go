@@ -14,6 +14,7 @@ type cell struct {
 }
 
 func readInt(scanner *bufio.Scanner) int {
+	scanner.Scan()
 	n, _ := strconv.Atoi(scanner.Text())
 	run(os.Stdin, os.Stdout)
 }
