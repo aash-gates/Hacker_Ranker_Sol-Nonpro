@@ -100,3 +100,7 @@ object Solution {
 		{
 			var i: Int = 0;
 			while (i < nV) {
+				if (orderedId(startOrder(i)) == -1) {
+					stack.add(startOrder(i));
+					ip.add(0);
+					while (stack.size > 0) {
