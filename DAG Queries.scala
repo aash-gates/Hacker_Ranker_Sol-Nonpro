@@ -247,3 +247,6 @@ object Solution {
 					while (ip < pari.size) {
 						val p: Int = pari.get(ip);
 						codes((i << 1) + 0) |= codes((p << 1) + 0);
+						codes((i << 1) + 1) |= codes((p << 1) + 1);
+						ip += 1;
+					}
