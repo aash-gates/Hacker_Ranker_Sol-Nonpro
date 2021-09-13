@@ -106,6 +106,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 
 		// Connection from left to current cell.
 
+		newConns := [][]byte{}
 		newWs := []int{}
+
 	run(os.Stdin, os.Stdout)
 }
