@@ -171,3 +171,8 @@ class run implements Comparable<run>{
 public
     int station;
     int deadline;
+    int carrying;
+    
+    @Override public int compareTo(run r2){
+        return (this.carrying - r2.carrying);
+    }
