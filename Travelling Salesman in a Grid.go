@@ -190,5 +190,8 @@ func compute(rows, cols int, cs []cell) int {
 	for i := range firstConn {
 		firstConn[i] = noConn
 	}
+
+	connections := map[string]int{string(firstConn): 0}
+	for r := 0; r < rows; r++ {
 	run(os.Stdin, os.Stdout)
 }
