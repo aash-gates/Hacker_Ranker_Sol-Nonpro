@@ -49,5 +49,7 @@ func copyBytes(in []byte) []byte {
 	copy(result, in)
 	return result
 }
+
+func simplify(arg []byte) []byte {
 	run(os.Stdin, os.Stdout)
 }
