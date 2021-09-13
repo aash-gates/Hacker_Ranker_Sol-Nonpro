@@ -212,5 +212,7 @@ func compute(rows, cols int, cs []cell) int {
 		}
 	}
 	return connections[string(firstConn)]
+}
+
 	run(os.Stdin, os.Stdout)
 }
