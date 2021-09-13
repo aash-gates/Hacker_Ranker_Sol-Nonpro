@@ -196,5 +196,8 @@ func compute(rows, cols int, cs []cell) int {
 		for c := 0; c < cols; c++ {
 
 			connections2 := map[string]int{}
+			for conn, w := range connections {
+
+				newConn, newW := newConnections(rows, cols, r, c, cs, []byte(conn), w)
 	run(os.Stdin, os.Stdout)
 }
