@@ -197,4 +197,7 @@ object Solution {
 		qFirst: Int,
 		qAfter: Int,
 		a: Array[Int],
+		codes: Array[Long],
+		add: Array[Int],
+		min: Array[Int],
 		{
