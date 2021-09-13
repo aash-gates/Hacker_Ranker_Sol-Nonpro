@@ -93,5 +93,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 			// unable to add new connection.
 			return nil, nil
 		}
+
+		// Add connection to left and down.
 	run(os.Stdin, os.Stdout)
 }
