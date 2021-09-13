@@ -323,3 +323,8 @@ object Solution {
 						Assert.check(p < i); // parents before children
 						ip += 1;
 					}
+				}
+				i += 1;
+			}
+		}
+		val a: Array[Int] = new Array[Int](nV);
