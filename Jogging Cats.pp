@@ -30,3 +30,5 @@ begin
         begin
             f[f[k,2],3]:=f[k,3];
             f[f[k,3],2]:=f[k,2];
+        end;
+        dec(num[x]);
