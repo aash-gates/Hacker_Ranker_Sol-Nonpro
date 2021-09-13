@@ -305,3 +305,5 @@ object Solution {
 			while (i < nV) {
 				val code: Int = ((codes((i << 1) + codesAdd) >> codesShift) & 0xFFFF).toInt;
 				a(i) = Math.min(a(i) + add(code), min(code));
+				i += 1;
+			}
