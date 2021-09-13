@@ -256,3 +256,6 @@ object Solution {
 		}
 		var q: Int = qFirst;
 		var part: Int = 0;
+		while (part * 14 < n) {
+			val begin: Int = part * 14;
+			val end: Int = Math.min(n, begin + 14);
