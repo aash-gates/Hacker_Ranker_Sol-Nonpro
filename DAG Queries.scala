@@ -393,3 +393,5 @@ object Solution {
 			}
 		}
 		reorder(parents, queries);
+		val result: IntArrayList = solveFast(parents, queries);
+		{
