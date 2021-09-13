@@ -166,3 +166,7 @@ object Solution {
 						orderedParents(orderedId(i)).add(orderedId(p));
 						ip += 1;
 					}
+				}
+				i += 1;
+			}
+		}
