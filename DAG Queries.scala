@@ -296,3 +296,7 @@ object Solution {
 					Assert.check(queries(q).typ == 3);
 					val node: Int = queries(q).node;
 					val code: Int = ((codes((node << 1) + codesAdd) >> codesShift) & mask).toInt;
+					val answer: Int = Math.min(a(node) + add(code), min(code));
+					result.add(answer);
+				}
+				q += 1;
