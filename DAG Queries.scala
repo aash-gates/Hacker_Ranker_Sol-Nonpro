@@ -307,3 +307,9 @@ object Solution {
 				a(i) = Math.min(a(i) + add(code), min(code));
 				i += 1;
 			}
+			part += 1;
+		}
+	}
+
+	def solveFast(parents: Array[IntArrayList], queries: Array[Query]): IntArrayList = {
+		val nV: Int = parents.length;
