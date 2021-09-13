@@ -62,3 +62,7 @@ class IntArrayList {
 	}
 	
 	def get(i: Int): Int = {
+		Assert.check(i < size);
+		return a(i);
+	}
+}
