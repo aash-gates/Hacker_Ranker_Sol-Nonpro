@@ -84,3 +84,7 @@ public class Drive {
         for(passenger p : passengers){
             total += steps[p.dest-1].departure + steps[p.dest-1].travelTime - p.arrival;
         }
+        return total;
+    }
+    
+    
