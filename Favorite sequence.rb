@@ -21,3 +21,4 @@ until s.empty?
     u = s.take(1)[0]
     graph[u].each { |v|
         rgraph[v].delete u
+        s << v if rgraph[v].empty?
