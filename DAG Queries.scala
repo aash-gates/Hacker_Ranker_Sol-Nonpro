@@ -26,3 +26,7 @@ class Scanner(is: java.io.InputStream) {
 		Assert.check(pos < len);
 		val value: Int = buffer(pos) & 0xFF;
 		pos += 1;
+		return value;
+	}
+
+	def nextInt(): Int = {
