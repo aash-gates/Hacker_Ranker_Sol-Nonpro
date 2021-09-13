@@ -235,3 +235,5 @@ object Solution {
 				val word: Int = i / 56;
 				val shift: Int = i % 56 / 14 * 16 + i % 14; // 14 used bits, 2 free
 				codes(node * 2 + word) |= 1L << shift;
+				i += 1;
+			}
