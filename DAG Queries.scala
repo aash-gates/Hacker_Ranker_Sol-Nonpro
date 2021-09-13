@@ -259,3 +259,6 @@ object Solution {
 		while (part * 14 < n) {
 			val begin: Int = part * 14;
 			val end: Int = Math.min(n, begin + 14);
+			val codesAdd: Int = part / 4;
+			val codesShift: Int = part % 4 * 16;
+			// a = Math.min(a + add, min)
