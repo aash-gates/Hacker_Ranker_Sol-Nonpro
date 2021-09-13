@@ -218,5 +218,7 @@ func run(in io.Reader, out io.Writer) {
 
 	s := bufio.NewScanner(in)
 	s.Split(bufio.ScanWords)
+
+	rows, cols, cs := read(s)
 	run(os.Stdin, os.Stdout)
 }
