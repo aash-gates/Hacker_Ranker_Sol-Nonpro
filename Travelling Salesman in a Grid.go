@@ -99,5 +99,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 		newConn[c] = byte(cellIdx)
 		newConn[len(newConn)-1] = byte(cellIdx)
 		newW := w + cell.down + cell.right
+
+		return [][]byte{newConn}, []int{newW}
 	run(os.Stdin, os.Stdout)
 }
