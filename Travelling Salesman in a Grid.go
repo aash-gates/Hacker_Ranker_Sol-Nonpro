@@ -81,5 +81,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 		fromLeft = true
 	}
 
+	cellIdx := r*cols + c
+	cell := cs[cellIdx]
 	run(os.Stdin, os.Stdout)
 }
