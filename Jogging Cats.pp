@@ -12,3 +12,5 @@ begin
     f[l[x],3]:=p;
     l[x]:=p;
 end;
+procedure delpoint(a:longint);
+var
