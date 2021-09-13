@@ -193,4 +193,8 @@ object Solution {
 
 	def process(
 		parents: Array[IntArrayList],
+		queries: Array[Query],
+		qFirst: Int,
+		qAfter: Int,
+		a: Array[Int],
 		{
