@@ -6,3 +6,5 @@ var
     sum:array[0..50005]of int64;
 procedure add(x,y:longint);
 begin
+    inc(p);
+    f[p,1]:=y;
