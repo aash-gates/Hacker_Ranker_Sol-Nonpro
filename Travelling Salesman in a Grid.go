@@ -127,5 +127,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 		newConns = append(newConns, newConn)
 
 		return newConns, newWs
+
+	} else if fromTop && !fromLeft {
+
 	run(os.Stdin, os.Stdout)
 }
