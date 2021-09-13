@@ -22,3 +22,9 @@ public class Drive {
         saveNitro(steps,runs,nitro);
         calcDepartures(steps);
         System.out.println(passengerTime(steps,passengers));
+        
+    }
+    
+    static void saveNitro(step[] steps,Queue<run> runs,int nitroLimit){
+        long targetSaving = totalDistance(steps) - nitroLimit;
+        run r;
