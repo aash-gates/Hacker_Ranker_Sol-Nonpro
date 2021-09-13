@@ -390,3 +390,5 @@ object Solution {
 					queries(i) = new Query(qType, node, -1);
 				}
 				i += 1;
+			}
+		}
