@@ -228,3 +228,7 @@ object Solution {
 		Assert.check(n <= 8 * 14);
 		Assert.check(nV <= 100000);
 		java.util.Arrays.fill(codes, 0, nV * 2, 0);
+		{
+			var i: Int = 0;
+			while (i < n) {
+				val node: Int = queries(q12.get(i)).node;
