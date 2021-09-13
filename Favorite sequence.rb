@@ -13,3 +13,4 @@ gets.to_i.times {
         last = x
     }
 }
+
