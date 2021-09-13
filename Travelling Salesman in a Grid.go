@@ -17,5 +17,7 @@ func readInt(scanner *bufio.Scanner) int {
 	scanner.Scan()
 	n, _ := strconv.Atoi(scanner.Text())
 	return n
+}
+
 	run(os.Stdin, os.Stdout)
 }
