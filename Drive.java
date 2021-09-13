@@ -166,3 +166,8 @@ public
     int dropped;
     int travelTime;
 }
+
+class run implements Comparable<run>{
+public
+    int station;
+    int deadline;
