@@ -138,3 +138,8 @@ public class Drive {
     }
     
     static void printStations(step[] steps){
+        for(step s : steps){
+            System.out.println("-------");
+            System.out.println("departure : "+String.valueOf(s.departure));
+            System.out.println("distance : "+String.valueOf(s.distance));
+            System.out.println("travel time : "+String.valueOf(s.travelTime));
