@@ -38,3 +38,7 @@ class Scanner(is: java.io.InputStream) {
 		var value: Int = c - '0';
 		c = nextChar();
 		while ('0' <= c && c <= '9') {
+			val digit: Int = c - '0';
+			Assert.check(value < Int.MaxValue / 10 || value == Int.MaxValue / 10 && digit <= Int.MaxValue % 10);
+			value = value * 10 + digit;
+			c = nextChar();
