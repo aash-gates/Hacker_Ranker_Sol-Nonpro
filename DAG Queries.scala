@@ -368,3 +368,13 @@ object Solution {
 		}
 		{
 			var i: Int = 0;
+			while (i < nE) {
+				val parent: Int = in.nextInt() - 1;
+				val child: Int = in.nextInt() - 1;
+				parents(child).add(parent);
+				i += 1;
+			}
+		}
+		val queries: Array[Query] = new Array[Query](nQ);
+		{
+			var i: Int = 0;
