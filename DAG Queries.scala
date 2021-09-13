@@ -58,3 +58,7 @@ class IntArrayList {
 			a = java.util.Arrays.copyOf(a, a.length * 2);
 		}
 		a(size) = x;
+		size += 1;
+	}
+	
+	def get(i: Int): Int = {
