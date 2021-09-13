@@ -318,3 +318,8 @@ object Solution {
 			while (i < nV) {
 				{
 					var ip: Int = 0;
+					while (ip < parents(i).size) {
+						val p: Int = parents(i).get(ip);
+						Assert.check(p < i); // parents before children
+						ip += 1;
+					}
