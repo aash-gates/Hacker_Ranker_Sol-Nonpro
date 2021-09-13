@@ -8,3 +8,5 @@ procedure add(x,y:longint);
 begin
     inc(p);
     f[p,1]:=y;
+    f[p,2]:=l[x];
+    f[l[x],3]:=p;
