@@ -205,3 +205,7 @@ object Solution {
 		val nV: Int = parents.length;
 		val q12: IntArrayList = new IntArrayList();
 		{
+			var q = qFirst;
+			while (q < qAfter) {
+				if (queries(q).typ < 3) {
+					q12.add(q);
