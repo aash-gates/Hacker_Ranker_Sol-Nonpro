@@ -262,3 +262,6 @@ object Solution {
 			val codesAdd: Int = part / 4;
 			val codesShift: Int = part % 4 * 16;
 			// a = Math.min(a + add, min)
+			add(0) = 0;
+			min(0) = 1000 * 1000 * 1000;
+			var bit: Int = 0;
