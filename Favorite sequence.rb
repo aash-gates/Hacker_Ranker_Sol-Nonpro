@@ -16,3 +16,4 @@ gets.to_i.times {
 
 s = SortedSet.new vertices.select { |x| rgraph[x].empty? }
 l = []
+
