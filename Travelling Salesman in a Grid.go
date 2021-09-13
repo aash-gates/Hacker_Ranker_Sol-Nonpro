@@ -83,5 +83,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 
 	cellIdx := r*cols + c
 	cell := cs[cellIdx]
+
+	if !fromTop && !fromLeft {
 	run(os.Stdin, os.Stdout)
 }
