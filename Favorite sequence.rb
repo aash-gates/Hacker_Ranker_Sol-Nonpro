@@ -12,3 +12,4 @@ gets.to_i.times {
         rgraph[x] << last if last
         last = x
     }
+}
