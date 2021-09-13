@@ -152,3 +152,7 @@ object Solution {
 		{
 			var i: Int = 0;
 			while (i < nV) {
+				orderedParents(i) = new IntArrayList();
+				i += 1;
+			}
+		}
