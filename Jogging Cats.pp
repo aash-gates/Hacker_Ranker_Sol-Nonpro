@@ -36,3 +36,9 @@ begin
         begin
             inc(j);bfs[j]:=x;
         end;
+        kk:=f[kk,2];
+    end;
+    num[a]:=0;
+    l[a]:=0;
+end;
+procedure delone;
