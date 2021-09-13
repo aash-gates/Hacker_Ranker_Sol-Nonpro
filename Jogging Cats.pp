@@ -26,3 +26,5 @@ begin
             l[x]:=f[k,2];
             f[f[k,2],3]:=0;
         end
+        else
+        begin
