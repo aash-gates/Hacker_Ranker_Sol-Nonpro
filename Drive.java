@@ -159,3 +159,10 @@ class passenger{
 
 class step{
 public
+    int departure;
+    int distance;
+    int carried;
+    int pickedUp;
+    int dropped;
+    int travelTime;
+}
