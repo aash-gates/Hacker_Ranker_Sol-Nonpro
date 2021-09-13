@@ -98,3 +98,8 @@ public class Drive {
             }
             t+=s.travelTime;
         }
+    }
+    
+    static void addPassengers(step[] steps, passenger[] passengers){
+        for (passenger p : passengers) {
+            if(steps[p.start].departure < p.arrival){
