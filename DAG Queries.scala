@@ -34,3 +34,7 @@ class Scanner(is: java.io.InputStream) {
 		while (c == ' ' || c == '\n' || c == '\r' || c == '\t') {
 			c = nextChar();
 		}
+		Assert.check('0' <= c && c <= '9');
+		var value: Int = c - '0';
+		c = nextChar();
+		while ('0' <= c && c <= '9') {
