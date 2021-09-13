@@ -148,3 +148,8 @@ public class Drive {
             System.out.println("carried : "+String.valueOf(s.carried));
         }
     }
+}
+
+class passenger{
+    public
+    int arrival;
