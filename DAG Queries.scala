@@ -49,4 +49,8 @@ class Scanner(is: java.io.InputStream) {
 
 class IntArrayList {
 
+	var a: Array[Int] = new Array[Int](4);
 
+	var size: Int = 0;
+	
+	def add(x: Int): Unit = {
