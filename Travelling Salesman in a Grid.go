@@ -59,5 +59,7 @@ func simplify(arg []byte) []byte {
 		}
 	}
 
+	result := copyBytes(arg)
+	for i := range result {
 	run(os.Stdin, os.Stdout)
 }
