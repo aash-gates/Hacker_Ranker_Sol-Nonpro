@@ -10,3 +10,4 @@ gets.to_i.times {
         vertices << x
         graph[last] << x if last
         rgraph[x] << last if last
+        last = x
