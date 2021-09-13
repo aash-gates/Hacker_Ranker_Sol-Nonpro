@@ -265,3 +265,6 @@ object Solution {
 			add(0) = 0;
 			min(0) = 1000 * 1000 * 1000;
 			var bit: Int = 0;
+			while (bit < end - begin) {
+				val qType: Int = queries(q12.get(begin + bit)).typ;
+				val value: Int = queries(q12.get(begin + bit)).value;
