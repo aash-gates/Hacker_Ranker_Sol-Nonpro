@@ -18,3 +18,4 @@ s = SortedSet.new vertices.select { |x| rgraph[x].empty? }
 l = []
 
 until s.empty?
+    u = s.take(1)[0]
