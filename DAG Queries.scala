@@ -80,3 +80,7 @@ object Solution {
 				startOrder(i) = i;
 				i += 1;
 			}
+		}
+		var rnd: java.util.Random = new java.util.Random(20161106);
+		{
+			var i: Int = nV - 1;
