@@ -144,3 +144,7 @@ object Solution {
 		{
 			var i: Int = 0;
 			while (i < orderedId.length) {
+				Assert.check(orderedId(i) >= 0);
+				i += 1;
+			}
+		}
