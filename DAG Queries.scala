@@ -6,3 +6,7 @@ object Assert {
 	}
 }
 
+class Scanner(is: java.io.InputStream) {
+
+	val buffer: Array[Byte] = new Array[Byte](1 << 16);
+
