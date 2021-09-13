@@ -392,3 +392,4 @@ object Solution {
 				i += 1;
 			}
 		}
+		reorder(parents, queries);
