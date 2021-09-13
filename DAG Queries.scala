@@ -22,3 +22,7 @@ class Scanner(is: java.io.InputStream) {
 			}
 			len = read;
 			pos = 0;
+		}
+		Assert.check(pos < len);
+		val value: Int = buffer(pos) & 0xFF;
+		pos += 1;
