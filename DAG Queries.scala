@@ -177,4 +177,8 @@ object Solution {
 				parents(i) = orderedParents(i);
 				i += 1;
 			}
+		}
+		{
+			var i: Int = 0;
+			while (i < queries.length) {
 		{
