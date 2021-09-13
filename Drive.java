@@ -109,3 +109,8 @@ public class Drive {
             steps[p.dest].dropped++;
         }
         
+        int load=0;
+        for (step s : steps){
+            load += s.pickedUp - s.dropped;
+            s.carried = load;
+        }
