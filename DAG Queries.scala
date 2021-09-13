@@ -112,3 +112,7 @@ object Solution {
 							ip.size -= 1;
 						} else {
 							val p: Int = parents(cur).get(ip.get(ip.size - 1));
+							ip.a(ip.size - 1) += 1;
+							if (orderedId(p) == -1) {
+								stack.add(p);
+								ip.add(0);
