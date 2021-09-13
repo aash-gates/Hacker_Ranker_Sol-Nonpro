@@ -128,3 +128,8 @@ public class Drive {
             
         }
         steps[steps.length-1] = new step();
+        
+        for(int i=0;i<passengers.length;i++){
+            passengers[i] = new passenger();
+            passengers[i].arrival = scan.nextInt();
+            passengers[i].start = scan.nextInt()-1;
