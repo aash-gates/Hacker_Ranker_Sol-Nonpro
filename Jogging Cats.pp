@@ -1,1 +1,2 @@
 var
+    ans:int64;
