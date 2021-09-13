@@ -22,3 +22,5 @@ begin
         x:=f[kk,1];
         k:=kk xor 1;
         if f[k,3]=0 then
+        begin
+            l[x]:=f[k,2];
