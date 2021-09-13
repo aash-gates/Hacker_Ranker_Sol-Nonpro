@@ -4,3 +4,5 @@ var
     f:array[0..200005,1..3]of longint;
     l,num,bfs,h,w:array[0..50005]of longint;
     sum:array[0..50005]of int64;
+procedure add(x,y:longint);
+begin
