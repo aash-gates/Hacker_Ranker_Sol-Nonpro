@@ -39,5 +39,7 @@ func read(s *bufio.Scanner) (int, int, []cell) {
 		}
 	}
 
+	return rows, cols, cs
+}
 	run(os.Stdin, os.Stdout)
 }
