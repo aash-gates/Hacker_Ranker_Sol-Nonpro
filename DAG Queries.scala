@@ -132,3 +132,7 @@ object Solution {
 					if (first) {
 						first = false;
 					} else {
+						print(", ");
+					}
+					print((i + 1) + " -> " + (orderedId(i) + 1));
+					i += 1;
