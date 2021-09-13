@@ -92,3 +92,7 @@ object Solution {
 				i -= 1;
 			}
 		}
+		val orderedId: Array[Int] = new Array[Int](nV);
+		java.util.Arrays.fill(orderedId, -1);
+		val stack: IntArrayList = new IntArrayList();
+		val ip: IntArrayList = new IntArrayList();
