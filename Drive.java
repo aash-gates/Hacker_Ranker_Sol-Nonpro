@@ -68,3 +68,8 @@ public class Drive {
     
     static void findruns(Queue<run> runs,step[] steps){
         steps[steps.length-1].departure = 2000000000;
+        for(int i=0;i<steps.length-1;i++){
+            if(steps[i].departure < steps[i+1].departure){
+                run r = new run();
+                r.station = i;
+                r.deadline = steps[i+1].departure - steps[i].departure;
