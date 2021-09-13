@@ -206,5 +206,7 @@ func compute(rows, cols int, cs []cell) int {
 						connections2[simpleConn] = newW[i]
 					}
 				}
+			}
+
 	run(os.Stdin, os.Stdout)
 }
