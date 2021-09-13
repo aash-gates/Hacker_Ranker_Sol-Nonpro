@@ -58,3 +58,16 @@ begin
         begin
             l[x]:=f[k,2];
             f[f[k,2],3]:=0;
+        end
+        else
+        begin
+            f[f[k,2],3]:=f[k,3];
+            f[f[k,3],2]:=f[k,2];
+        end;
+        dec(num[x]);
+        if num[x]=1 then
+        begin
+            inc(j);bfs[j]:=x;
+        end;
+    end;
+end;
