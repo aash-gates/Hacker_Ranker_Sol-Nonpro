@@ -175,5 +175,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 				newConn[i] = conn[c]
 				break
 			}
+		}
+		newW := w
+
 	run(os.Stdin, os.Stdout)
 }
