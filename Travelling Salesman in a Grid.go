@@ -166,5 +166,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 			return nil, nil
 		}
 
+		// Closing dangling connections.
+		newConn := copyBytes(conn)
+		newConn[c] = noConn
 	run(os.Stdin, os.Stdout)
 }
