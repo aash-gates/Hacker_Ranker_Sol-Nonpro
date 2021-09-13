@@ -57,5 +57,7 @@ func simplify(arg []byte) []byte {
 		if _, ok := mm[a]; !ok {
 			mm[a] = byte(len(mm))
 		}
+	}
+
 	run(os.Stdin, os.Stdout)
 }
