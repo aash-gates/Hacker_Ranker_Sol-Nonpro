@@ -244,3 +244,6 @@ object Solution {
 				{
 					val pari: IntArrayList = parents(i);
 					var ip: Int = 0;
+					while (ip < pari.size) {
+						val p: Int = pari.get(ip);
+						codes((i << 1) + 0) |= codes((p << 1) + 0);
