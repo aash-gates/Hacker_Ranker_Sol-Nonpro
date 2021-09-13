@@ -9,3 +9,4 @@ gets.to_i.times {
     gets.split.map(&:to_i).each { |x|
         vertices << x
         graph[last] << x if last
+        rgraph[x] << last if last
