@@ -44,3 +44,7 @@ public class Drive {
             if ((0<s) && (0 < r.deadline)){
                 r.carrying += steps[s].dropped;
                 r.station--;
+                runs.add(r);
+            }
+        }
+    }
