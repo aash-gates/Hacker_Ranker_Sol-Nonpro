@@ -157,5 +157,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 	} else if fromTop && fromLeft {
 
 		// Connections to current cell form top and left.
+
+		if conn[c] == conn[len(conn)-1] && (r != rows-1 || c != cols-1) {
+			// Unable to connect path, because we
 	run(os.Stdin, os.Stdout)
 }
