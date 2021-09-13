@@ -14,3 +14,5 @@ begin
 end;
 procedure delpoint(a:longint);
 var
+    k,kk,x:longint;
+begin
