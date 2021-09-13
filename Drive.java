@@ -17,3 +17,8 @@ public class Drive {
         addPassengers(steps,passengers);
         calcDepartures(steps);
         
+        Queue<run> runs = new PriorityQueue();
+        findruns(runs,steps);
+        saveNitro(steps,runs,nitro);
+        calcDepartures(steps);
+        System.out.println(passengerTime(steps,passengers));
