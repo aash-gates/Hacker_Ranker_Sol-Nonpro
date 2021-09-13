@@ -13,5 +13,7 @@ type cell struct {
 	down  int
 }
 
+func readInt(scanner *bufio.Scanner) int {
+	n, _ := strconv.Atoi(scanner.Text())
 	run(os.Stdin, os.Stdout)
 }
