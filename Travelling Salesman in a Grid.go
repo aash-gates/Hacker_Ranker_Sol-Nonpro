@@ -65,5 +65,7 @@ func simplify(arg []byte) []byte {
 			result[i] = mm[arg[i]]
 		}
 	}
+
+	return result
 	run(os.Stdin, os.Stdout)
 }
