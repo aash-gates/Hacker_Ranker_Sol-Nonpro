@@ -140,3 +140,7 @@ object Solution {
 			}
 			println();
 		}
+		Assert.check(nextId == nV);
+		{
+			var i: Int = 0;
+			while (i < orderedId.length) {
