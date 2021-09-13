@@ -23,3 +23,4 @@ until s.empty?
         rgraph[v].delete u
         s << v if rgraph[v].empty?
     }
+    l << u
