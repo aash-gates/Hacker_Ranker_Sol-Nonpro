@@ -136,3 +136,7 @@ object Solution {
 					}
 					print((i + 1) + " -> " + (orderedId(i) + 1));
 					i += 1;
+				}
+			}
+			println();
+		}
