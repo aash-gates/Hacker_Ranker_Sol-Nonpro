@@ -285,3 +285,6 @@ object Solution {
 						code += 1;
 					}
 				}
+				bit += 1;
+			}
+			var mask = 0;
