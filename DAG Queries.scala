@@ -253,3 +253,6 @@ object Solution {
 				}
 				i += 1;
 			}
+		}
+		var q: Int = qFirst;
+		var part: Int = 0;
