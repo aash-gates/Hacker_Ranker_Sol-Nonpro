@@ -250,3 +250,6 @@ object Solution {
 						codes((i << 1) + 1) |= codes((p << 1) + 1);
 						ip += 1;
 					}
+				}
+				i += 1;
+			}
