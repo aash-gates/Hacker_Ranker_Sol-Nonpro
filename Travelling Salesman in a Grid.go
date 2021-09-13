@@ -47,5 +47,7 @@ const noConn = 255
 func copyBytes(in []byte) []byte {
 	result := make([]byte, len(in))
 	copy(result, in)
+	return result
+}
 	run(os.Stdin, os.Stdout)
 }
