@@ -18,3 +18,5 @@ var
 begin
     kk:=l[a];
     while kk<>0 do
+    begin
+        x:=f[kk,1];
