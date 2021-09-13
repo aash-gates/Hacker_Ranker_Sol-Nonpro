@@ -142,5 +142,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 			newConn[c] = noConn
 			newConn[len(newConn)-1] = conn[c]
 			newWs = append(newWs, w+cell.right)
+			newConns = append(newConns, newConn)
+		}
+
 	run(os.Stdin, os.Stdout)
 }
