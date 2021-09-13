@@ -174,3 +174,7 @@ object Solution {
 			var i: Int = 0;
 			while (i < nV) {
 				java.util.Arrays.sort(orderedParents(i).a, 0, orderedParents(i).size);
+				parents(i) = orderedParents(i);
+				i += 1;
+			}
+		{
