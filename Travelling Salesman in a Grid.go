@@ -87,5 +87,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 	if !fromTop && !fromLeft {
 
 		// No connections leading to current cell.
+
+		if c == cols-1 {
 	run(os.Stdin, os.Stdout)
 }
