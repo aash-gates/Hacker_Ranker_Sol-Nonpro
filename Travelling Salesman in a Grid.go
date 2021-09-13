@@ -105,5 +105,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 	} else if !fromTop && fromLeft {
 
 		// Connection from left to current cell.
+
+		newWs := []int{}
 	run(os.Stdin, os.Stdout)
 }
