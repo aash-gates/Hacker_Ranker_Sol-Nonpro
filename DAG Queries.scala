@@ -399,3 +399,5 @@ object Solution {
 			while (i < result.size) {
 				println(result.get(i));
 				i += 1;
+			}
+		}
