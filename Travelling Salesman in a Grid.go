@@ -145,5 +145,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 			newConns = append(newConns, newConn)
 		}
 
+		// Adding connection to down.
+		newConn := copyBytes(conn)
+		//newConn[len(newConn)-1] = noConn // // Already true, because no connection from left.
 	run(os.Stdin, os.Stdout)
 }
