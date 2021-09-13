@@ -181,5 +181,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 		return [][]byte{newConn}, []int{newW}
 	}
 
+	return nil, nil
+}
+
 	run(os.Stdin, os.Stdout)
 }
