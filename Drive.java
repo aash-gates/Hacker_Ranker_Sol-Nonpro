@@ -53,3 +53,9 @@ public class Drive {
         long distance=0;
         for(step s : steps){
             distance += s.distance;
+        }
+        return distance;
+    }
+    
+    static void printruns(Queue<run> runs){
+        for(run r : runs){
