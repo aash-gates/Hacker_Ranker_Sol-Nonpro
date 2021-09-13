@@ -114,3 +114,8 @@ public class Drive {
             load += s.pickedUp - s.dropped;
             s.carried = load;
         }
+    }
+    
+    static void loadStuff(Scanner scan,step[] steps, passenger[] passengers){
+        for(int i=0;i<steps.length-1;i++){
+            steps[i] = new step();
