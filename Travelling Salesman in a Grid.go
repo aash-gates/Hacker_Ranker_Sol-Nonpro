@@ -21,5 +21,7 @@ func readInt(scanner *bufio.Scanner) int {
 
 func read(s *bufio.Scanner) (int, int, []cell) {
 	rows := readInt(s)
+	cols := readInt(s)
+
 	run(os.Stdin, os.Stdout)
 }
