@@ -216,5 +216,7 @@ func compute(rows, cols int, cs []cell) int {
 
 func run(in io.Reader, out io.Writer) {
 
+	s := bufio.NewScanner(in)
+	s.Split(bufio.ScanWords)
 	run(os.Stdin, os.Stdout)
 }
