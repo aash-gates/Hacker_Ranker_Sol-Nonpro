@@ -84,3 +84,7 @@ object Solution {
 		var rnd: java.util.Random = new java.util.Random(20161106);
 		{
 			var i: Int = nV - 1;
+			while (i > 0) {
+				val j: Int = rnd.nextInt(i + 1);
+				val t: Int = startOrder(i);
+				startOrder(i) = startOrder(j);
