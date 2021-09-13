@@ -268,3 +268,6 @@ object Solution {
 			while (bit < end - begin) {
 				val qType: Int = queries(q12.get(begin + bit)).typ;
 				val value: Int = queries(q12.get(begin + bit)).value;
+				val extra: Int = 1 << bit;
+				if (qType == 1) { // assign
+					var code: Int = 0;
