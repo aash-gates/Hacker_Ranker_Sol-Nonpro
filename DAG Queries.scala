@@ -241,3 +241,6 @@ object Solution {
 		{
 			var i: Int = 0;
 			while (i < nV) {
+				{
+					val pari: IntArrayList = parents(i);
+					var ip: Int = 0;
