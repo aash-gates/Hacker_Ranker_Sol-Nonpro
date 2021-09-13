@@ -73,5 +73,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 
 	fromTop := false
 	if conn[c] != noConn {
+		fromTop = true
+	}
 	run(os.Stdin, os.Stdout)
 }
