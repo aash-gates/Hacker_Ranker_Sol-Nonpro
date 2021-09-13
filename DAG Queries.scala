@@ -116,3 +116,7 @@ object Solution {
 							if (orderedId(p) == -1) {
 								stack.add(p);
 								ip.add(0);
+							}
+						}
+					}
+				}
