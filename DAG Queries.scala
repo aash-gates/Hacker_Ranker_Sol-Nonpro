@@ -181,4 +181,8 @@ object Solution {
 		{
 			var i: Int = 0;
 			while (i < queries.length) {
+				val typ: Int = queries(i).typ;
+				val node: Int = queries(i).node;
+				val value: Int = queries(i).value;
+				Assert.check(0 <= node && node < nV);
 		{
