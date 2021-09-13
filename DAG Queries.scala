@@ -148,3 +148,7 @@ object Solution {
 				i += 1;
 			}
 		}
+		val orderedParents: Array[IntArrayList] = new Array[IntArrayList](nV);
+		{
+			var i: Int = 0;
+			while (i < nV) {
