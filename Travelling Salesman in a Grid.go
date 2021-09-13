@@ -203,5 +203,8 @@ func compute(rows, cols int, cs []cell) int {
 					simpleConn := string(simplify(newConn[i]))
 					w, ok := connections2[simpleConn]
 					if !ok || w > newW[i] {
+						connections2[simpleConn] = newW[i]
+					}
+				}
 	run(os.Stdin, os.Stdout)
 }
