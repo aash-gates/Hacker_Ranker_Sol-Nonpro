@@ -291,3 +291,5 @@ object Solution {
 			while (end == n && q != qAfter || end != n && q != q12.get(end)) {
 				if (queries(q).typ < 3) {
 					mask <<= 1;
+					mask |= 1;
+				} else {
