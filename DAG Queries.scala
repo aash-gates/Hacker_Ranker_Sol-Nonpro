@@ -42,3 +42,7 @@ class Scanner(is: java.io.InputStream) {
 			Assert.check(value < Int.MaxValue / 10 || value == Int.MaxValue / 10 && digit <= Int.MaxValue % 10);
 			value = value * 10 + digit;
 			c = nextChar();
+		}
+		return value;
+	}
+}
