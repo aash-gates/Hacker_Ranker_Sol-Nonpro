@@ -51,5 +51,7 @@ func copyBytes(in []byte) []byte {
 }
 
 func simplify(arg []byte) []byte {
+
+	mm := map[byte]byte{}
 	run(os.Stdin, os.Stdout)
 }
