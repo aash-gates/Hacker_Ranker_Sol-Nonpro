@@ -139,5 +139,8 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 			// We are not at the right edge of the grid;
 			// Adding connection to the right.
 			newConn := copyBytes(conn)
+			newConn[c] = noConn
+			newConn[len(newConn)-1] = conn[c]
+			newWs = append(newWs, w+cell.right)
 	run(os.Stdin, os.Stdout)
 }
