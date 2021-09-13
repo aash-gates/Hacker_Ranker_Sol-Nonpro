@@ -33,3 +33,8 @@ public class Drive {
         
         while(0<targetSaving){
             r = runs.poll();
+            s = r.station;
+            x = steps[s].distance - steps[s].travelTime;
+            if(x>r.deadline){x=r.deadline;}
+            if(x>targetSaving){x=(int)targetSaving;}
+            
