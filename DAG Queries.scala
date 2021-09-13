@@ -217,3 +217,7 @@ object Solution {
 			var q: Int = qFirst;
 			while (q < qAfter) {
 				Assert.check(queries(q).typ == 3);
+				val node: Int = queries(q).node;
+				Assert.check(0 <= node && node < nV);
+				result.add(a(node));
+				q += 1;
