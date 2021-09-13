@@ -119,3 +119,12 @@ public class Drive {
     static void loadStuff(Scanner scan,step[] steps, passenger[] passengers){
         for(int i=0;i<steps.length-1;i++){
             steps[i] = new step();
+            steps[i].distance = scan.nextInt();
+            steps[i].departure = 0;
+            steps[i].travelTime = 0;
+            steps[i].carried = 0;
+            steps[i].pickedUp = 0;
+            steps[i].dropped = 0;
+            
+        }
+        steps[steps.length-1] = new step();
