@@ -271,3 +271,6 @@ object Solution {
 				val extra: Int = 1 << bit;
 				if (qType == 1) { // assign
 					var code: Int = 0;
+					while (code < extra) {
+						add(code + extra) = 1000 * 1000 * 1000;
+						min(code + extra) = value;
