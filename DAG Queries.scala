@@ -300,3 +300,8 @@ object Solution {
 					result.add(answer);
 				}
 				q += 1;
+			}
+			var i = 0;
+			while (i < nV) {
+				val code: Int = ((codes((i << 1) + codesAdd) >> codesShift) & 0xFFFF).toInt;
+				a(i) = Math.min(a(i) + add(code), min(code));
