@@ -199,5 +199,9 @@ func compute(rows, cols int, cs []cell) int {
 			for conn, w := range connections {
 
 				newConn, newW := newConnections(rows, cols, r, c, cs, []byte(conn), w)
+				for i := range newConn {
+					simpleConn := string(simplify(newConn[i]))
+					w, ok := connections2[simpleConn]
+					if !ok || w > newW[i] {
 	run(os.Stdin, os.Stdout)
 }
