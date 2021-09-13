@@ -30,3 +30,7 @@ class Scanner(is: java.io.InputStream) {
 	}
 
 	def nextInt(): Int = {
+		var c: Int = nextChar();
+		while (c == ' ' || c == '\n' || c == '\r' || c == '\t') {
+			c = nextChar();
+		}
