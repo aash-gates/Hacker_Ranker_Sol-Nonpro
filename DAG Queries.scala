@@ -221,3 +221,6 @@ object Solution {
 				Assert.check(0 <= node && node < nV);
 				result.add(a(node));
 				q += 1;
+			}
+			return;
+		}
