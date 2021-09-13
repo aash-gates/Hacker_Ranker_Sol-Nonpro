@@ -121,17 +121,31 @@ end;
 begin
     readln(n,m);
     p:=1;
+    for i:=1 to m do
     begin
+        read(u,v);
         add(u,v);add(v,u);
+        inc(num[u]);inc(num[v]);
     end;
     j:=0;
+    for i:=1 to n do if num[i]=1 then
     begin
         inc(j);bfs[j]:=i;
+    end;
     i:=0;
+    delone;
     for t:=1 to n do h[t]:=num[t];
+    for t:=1 to n do w[t]:=t;
     qsort(1,n);
+    ans:=0;
+    for t:=1 to n do
     begin
         if num[w[t]]<>0 then
+        begin
+            work(w[t]);
+            delpoint(w[t]);
+            delone;
+        end;
     end;
     writeln(ans);
 end.
