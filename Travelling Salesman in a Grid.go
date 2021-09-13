@@ -71,5 +71,7 @@ func simplify(arg []byte) []byte {
 
 func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]byte, []int) {
 
+	fromTop := false
+	if conn[c] != noConn {
 	run(os.Stdin, os.Stdout)
 }
