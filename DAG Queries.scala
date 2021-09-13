@@ -388,3 +388,5 @@ object Solution {
 					Assert.check(qType == 3);
 					val node: Int = in.nextInt() - 1;
 					queries(i) = new Query(qType, node, -1);
+				}
+				i += 1;
