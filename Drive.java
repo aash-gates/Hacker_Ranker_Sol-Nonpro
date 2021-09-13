@@ -103,3 +103,9 @@ public class Drive {
     static void addPassengers(step[] steps, passenger[] passengers){
         for (passenger p : passengers) {
             if(steps[p.start].departure < p.arrival){
+                steps[p.start].departure = p.arrival;
+            }
+            steps[p.start].pickedUp++;
+            steps[p.dest].dropped++;
+        }
+        
