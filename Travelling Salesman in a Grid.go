@@ -173,5 +173,7 @@ func newConnections(rows, cols, r, c int, cs []cell, conn []byte, w int) ([][]by
 		for i := range newConn {
 			if newConn[i] == conn[len(conn)-1] {
 				newConn[i] = conn[c]
+				break
+			}
 	run(os.Stdin, os.Stdout)
 }
