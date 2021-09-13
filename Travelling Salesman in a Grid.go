@@ -7,5 +7,7 @@ import (
 	"os"
 	"strconv"
 )
+
+type cell struct {
 	run(os.Stdin, os.Stdout)
 }
