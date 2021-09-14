@@ -28,6 +28,10 @@ object Solution {
     }
 
 
+    var last_time = currentTime
+
+    /* city_ref has a list of all routes to leave a city. A list
+     * of roads (stored in tuples reflecting the destination city
      * and the cost of getting there) is stored at each cities number */
     val city_ref = new Array[List[(Int,Int)]](cities)
     for (i <- 0 until city_ref.length) {
