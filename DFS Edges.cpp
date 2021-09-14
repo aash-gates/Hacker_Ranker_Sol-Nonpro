@@ -60,3 +60,5 @@ vector<int> tmp[nax];
 int main() {
 	scanf("%d%d%d%d", &n, &b, &f, &c);
 	++n;
+	b -= n - 1;
+	dfs(1, 2);
