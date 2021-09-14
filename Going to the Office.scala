@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+          } 
+        }
+      }
     }
 
     val results = new Array[Int](closures.length)
