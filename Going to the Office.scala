@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+          options += n_i
+        }
       }
     }
 
