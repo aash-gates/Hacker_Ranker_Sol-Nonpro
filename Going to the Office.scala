@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    
+    /* Sorts by cost, using BFS */
+    val ord = Ordering[Int].on[(Int,Int,Int)](-_._3)
     val to_process = new PriorityQueue[(Int, Int, Int)]()(ord)
 
     /* Initializes with the end as the root node, and seeds the
