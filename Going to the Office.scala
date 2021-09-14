@@ -29,6 +29,7 @@ object Solution {
 
 
       /* neighbor index, neighbor cost */
+      for ((n_i, n_c) <- city_ref(city)) {
         if ( ( (n_i != c_node.parent) ||
                (!exclude_parent) )    &&
              ( (best(n_i) == 0)       ||
