@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+        cost_from_start += tree(current).cost - tree(parent).cost
+        current = parent
       }
       expand_city(current, cost_from_start, true)
       var best_alt = 0 // a meaningless initial value
