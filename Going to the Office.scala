@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      }
+      if (r(0) < r(1)) {
         roads(i) = (r(0), r(1), r(2))
       } else {
         roads(i) = (r(1), r(0), r(2))
