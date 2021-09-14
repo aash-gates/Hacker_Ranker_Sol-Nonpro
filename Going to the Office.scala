@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+            best_alt = -1
+          }
         }
       } 
     }
