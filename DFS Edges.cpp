@@ -58,3 +58,5 @@ void dfs(int a, int next) {
 vector<int> tmp[nax];
 
 int main() {
+	scanf("%d%d%d%d", &n, &b, &f, &c);
+	++n;
