@@ -28,6 +28,7 @@ object Solution {
     }
 
 
+    var pre = 0
     var post = 0
     def child_of(node: TreeNode): Boolean = {
       (pre > node.pre) && (post < node.post)
