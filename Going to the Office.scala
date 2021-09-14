@@ -17,3 +17,4 @@ object Solution {
                   parentc:   Int, 
                   costc:     Int) {
     
+    val num = numc
