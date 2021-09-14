@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      val (n_i, c_i) = mark_stack(s_i)
+      mark_stack(s_i) = null
+      val node = tree(n_i)
       if (node.pre == 0) {
         node.pre = counter
         counter += 1
