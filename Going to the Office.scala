@@ -18,3 +18,4 @@ object Solution {
                   costc:     Int) {
     
     val num = numc
+    val parent = parentc
