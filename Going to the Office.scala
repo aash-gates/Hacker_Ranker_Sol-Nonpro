@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+          results(i) = 0
+        }
       } 
     }
 
