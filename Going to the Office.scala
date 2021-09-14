@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    /* The closures are reprocessed to make the final calculations
+     * as efficient as possible. All closures that are not in the
+     * fastest route are ignored, and the ones that are are processed
      * in order of how close they are to the start. This allows for 
      * a reverse-bfs of sorts to be performed from the start. */
 
