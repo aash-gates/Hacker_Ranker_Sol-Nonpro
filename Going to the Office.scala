@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    }
+
+
     /* The closures are reprocessed to make the final calculations
      * as efficient as possible. All closures that are not in the
      * fastest route are ignored, and the ones that are are processed
