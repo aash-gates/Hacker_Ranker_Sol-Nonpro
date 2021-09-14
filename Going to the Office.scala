@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      val (c1, c2, closure_i) = path
+      val (cn1, cn2) = ((tree(c1), tree(c2)))
       while (current != c1) {
         if (current == end) System.exit(0)
         expand_city(current, cost_from_start)
