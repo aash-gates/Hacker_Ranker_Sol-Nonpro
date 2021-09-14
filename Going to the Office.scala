@@ -28,6 +28,7 @@ object Solution {
     }
 
 
+    val num_edges = params(1).toInt
     val roads = new Array[(Int, Int, Int)](num_edges)
     /* entry of roads & closures enforce that the 
      * start number is less than the second */
