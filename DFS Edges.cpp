@@ -48,3 +48,5 @@ void dfs(int a, int next) {
 		}
 		dfs(a, next + 1);
 	}
+	else {
+		ancestors.push_back(a);
