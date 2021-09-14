@@ -36,3 +36,5 @@ vector<pair<int,int>> cross;
 vector<pair<int,int>> down;
 vector<int> ancestors;
 
+void dfs(int a, int next) {
+	if(next > n) return;
