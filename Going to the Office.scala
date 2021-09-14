@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+    return results
+  }
 
 
   def main(args: Array[String]) {
