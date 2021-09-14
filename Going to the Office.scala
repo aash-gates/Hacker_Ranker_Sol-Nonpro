@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      }
+      if (c_i < node.children.length) {
+        mark_stack(s_i) = (n_i, c_i+1)
         mark_stack(s_i+1) = (node.children(c_i), 0)
         s_i += 2
       } else {
