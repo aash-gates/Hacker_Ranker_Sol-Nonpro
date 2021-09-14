@@ -32,3 +32,5 @@ sim dor(const c &) { ris; }
 const int nax = 1e6 + 5;
 int n, b, f, c;
 vector<int> children[nax];
+vector<pair<int,int>> cross;
+vector<pair<int,int>> down;
