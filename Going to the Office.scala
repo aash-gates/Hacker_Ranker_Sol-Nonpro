@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+               (!exclude_parent) )    &&
+             ( (best(n_i) == 0)       ||
                (best(n_i) > (cost + n_c)) ) )  {
           best(n_i) = cost + n_c
           options += n_i
