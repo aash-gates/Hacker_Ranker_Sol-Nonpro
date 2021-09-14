@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+        if (options.length == 0) {
+          best_alt = -1
         } else {
           best_alt = options.dequeue()
 
