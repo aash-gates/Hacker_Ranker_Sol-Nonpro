@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      to_process += ((end, c, w))
+    }
+
     /* Performs the search, prioritizing the cheapest routes. */
     while (to_process.length > 0) {
       val (n1, n2, cost) = to_process.dequeue()
