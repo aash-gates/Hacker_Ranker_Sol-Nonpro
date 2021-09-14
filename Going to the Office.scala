@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      if (cn1.parent == c2) {
+        if ((c1 == start) || tree(start).child_of(cn1)) {
+          repath += ((c1, c2, i))
           results(i) = 0
         }
       } else if (cn2.parent == c1) {
