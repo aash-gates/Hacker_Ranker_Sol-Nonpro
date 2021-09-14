@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+
+
+    val tree = new Array[TreeNode](cities)
     
     /* Sorts by cost, using BFS */
     val ord = Ordering[Int].on[(Int,Int,Int)](-_._3)
