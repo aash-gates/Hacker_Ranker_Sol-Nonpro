@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+    val roads = new Array[(Int, Int, Int)](num_edges)
+    /* entry of roads & closures enforce that the 
      * start number is less than the second */
     for (i <- 0 until num_edges) {
       val r = iter.next.split(" ").map(x => x.toInt)
