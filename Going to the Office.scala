@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+        mark_stack(s_i+1) = (node.children(c_i), 0)
+        s_i += 2
+      } else {
         node.post = counter
         counter += 1        
       }
