@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+
+          if (best_alt == current) {
             // do nothing
           } else if (tree(best_alt).child_of(cn2)) {
             expand_city(best_alt, best(best_alt))
