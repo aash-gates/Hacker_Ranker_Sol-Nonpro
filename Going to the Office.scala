@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      if (tree(n2) == null) {
+        tree(n2) = new TreeNode(n2, n1, cost)
+        tree(n1).add_child(n2)
         for ((c, w) <- city_ref(n2)) {
           if (tree(c) == null) {
             to_process += ((n2, c, cost+w))
