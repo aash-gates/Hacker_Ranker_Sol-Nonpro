@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+     * search with all its neighors*/
+    tree(end) = new TreeNode(end, end, 0)
+    for ((c, w) <- city_ref(end)) {
       to_process += ((end, c, w))
     }
 
