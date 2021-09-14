@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      /* neighbor index, neighbor cost */
+        if ( ( (n_i != c_node.parent) ||
                (!exclude_parent) )    &&
              ( (best(n_i) == 0)       ||
                (best(n_i) > (cost + n_c)) ) )  {
