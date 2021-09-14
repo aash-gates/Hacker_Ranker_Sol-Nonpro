@@ -70,3 +70,5 @@ int main() {
 	
 	
 	b += n - 1;
+	for(int a = 1; a <= n; ++a)
+		for(int x : children[a])
