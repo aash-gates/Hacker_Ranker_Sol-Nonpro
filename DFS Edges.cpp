@@ -74,3 +74,5 @@ int main() {
 		for(int x : children[a])
 			if(b) {
 				--b;
+				tmp[x].push_back(a);
+			}
