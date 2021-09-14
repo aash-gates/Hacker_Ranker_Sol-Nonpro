@@ -40,3 +40,5 @@ void dfs(int a, int next) {
 	if(next > n) return;
 	for(int i = 0; i < (int) ancestors.size() && (int) down.size() < max(f, b); ++i)
 		down.push_back({ancestors[i], next});
+	children[a].push_back(next);
+	int rem = n - next + 1;
