@@ -1,3 +1,6 @@
+            if (source == target) {
+                return residue;
+            }
             for (; idx[source] < graph[source].Count; ++idx[source]) {
                 var next = graph[source][idx[source]];
                 if (distance[next] != distance[source] + 1) {
