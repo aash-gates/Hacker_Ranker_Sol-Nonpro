@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      " order:"+pre+" "+post+
+      " children:"+children
+    }
   }
 
   def get_fastest(start:    Int, 
