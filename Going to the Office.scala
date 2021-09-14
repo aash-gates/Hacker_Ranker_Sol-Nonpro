@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    var s_i = 1 // points to next empty
+    var counter = 1
+    
 
     while (s_i > 0) {
       s_i -= 1
