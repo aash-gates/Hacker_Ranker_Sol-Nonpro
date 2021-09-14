@@ -76,3 +76,5 @@ int main() {
 				--b;
 				tmp[x].push_back(a);
 			}
+	for(int a = 1; a <= n; ++a)
+		for(int x : tmp[a])
