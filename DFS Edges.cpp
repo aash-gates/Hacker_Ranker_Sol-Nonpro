@@ -80,3 +80,4 @@ int main() {
 		for(int x : tmp[a])
 			children[a].push_back(x);
 	
+	for(auto p : cross)
