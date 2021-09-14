@@ -29,6 +29,8 @@ object Solution {
 
 
     }
+        closures(i) = (c(0), c(1))
+      } else {
         closures(i) = (c(1), c(0))
       }
     }
