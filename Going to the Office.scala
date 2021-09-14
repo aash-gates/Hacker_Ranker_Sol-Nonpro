@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+        options += city
+      }
       /* neighbor index, neighbor cost */
       for ((n_i, n_c) <- city_ref(city)) {
         if ( ( (n_i != c_node.parent) ||
