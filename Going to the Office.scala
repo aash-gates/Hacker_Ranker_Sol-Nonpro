@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+    while (repath.length > 0) {
+      val path = repath.dequeue()
       val (c1, c2, closure_i) = path
       val (cn1, cn2) = ((tree(c1), tree(c2)))
       while (current != c1) {
