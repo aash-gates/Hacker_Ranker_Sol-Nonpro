@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+  }
+
+  def get_fastest(start:    Int, 
                   end:      Int, 
                   cities:   Int,
                   roads:    Array[(Int, Int, Int)], 
