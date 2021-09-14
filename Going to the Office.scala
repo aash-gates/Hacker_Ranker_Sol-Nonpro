@@ -29,6 +29,8 @@ object Solution {
 
 
     }
+      val c = iter.next.split(" ").map(x => x.toInt)
+      if (c(0) < c(1)) {
         closures(i) = (c(0), c(1))
       } else {
         closures(i) = (c(1), c(0))
