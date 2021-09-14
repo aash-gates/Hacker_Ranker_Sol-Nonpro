@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+        expand_city(current, cost_from_start)
+        var parent = tree(current).parent
         cost_from_start += tree(current).cost - tree(parent).cost
         current = parent
       }
