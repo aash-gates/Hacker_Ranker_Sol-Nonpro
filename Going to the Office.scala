@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      } 
+    }
 
     val best = new Array[Int](cities)
     val opt_ord = Ordering[Int].on[Int](x => -(best(x) + tree(x).cost))
