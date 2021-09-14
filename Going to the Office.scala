@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      }
+    }
 
 
     var current = start
