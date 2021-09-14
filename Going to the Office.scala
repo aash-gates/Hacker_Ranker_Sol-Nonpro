@@ -24,3 +24,4 @@ object Solution {
     var children = List[Int]()
 
     def add_child(child: Int) {
+      children ::= child
