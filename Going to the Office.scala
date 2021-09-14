@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+
+    /* Applies pre/post orderings on the tree. The stack contains
+     * tuples with the current node being considered, and the number
      * of it's children that have already been dealt with. */
 
     // using an array for the stack because apparently popping from
