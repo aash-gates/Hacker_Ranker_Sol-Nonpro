@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+    var params = iter.next.split(" ")
+    val num_cities = params(0).toInt
     val num_edges = params(1).toInt
     val roads = new Array[(Int, Int, Int)](num_edges)
     /* entry of roads & closures enforce that the 
