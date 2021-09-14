@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+     * and the cost of getting there) is stored at each cities number */
+    val city_ref = new Array[List[(Int,Int)]](cities)
+    for (i <- 0 until city_ref.length) {
       city_ref(i) = List()
     }
     for ((c1, c2, w) <- roads) {
