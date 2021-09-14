@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    // a scala stack takes quadratic time
+    val mark_stack = new Array[(Int, Int)](cities)
+    mark_stack(0) = (end, 0)
     var s_i = 1 // points to next empty
     var counter = 1
     
