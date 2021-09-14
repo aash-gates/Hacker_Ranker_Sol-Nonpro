@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+                  closures: Array[(Int, Int)]): Array[Int] = {
+    
+
     var last_time = currentTime
 
     /* city_ref has a list of all routes to leave a city. A list
