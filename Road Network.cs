@@ -1,3 +1,6 @@
+                    if (pushed > 0) {
+                        flow[next, source] -= pushed;
+                        return pushed;
                     }
                 }
             }
