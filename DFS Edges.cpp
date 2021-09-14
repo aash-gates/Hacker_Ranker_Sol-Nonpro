@@ -30,3 +30,5 @@ sim dor(const c &) { ris; }
 #define imie(x) " [" << #x ": " << (x) << "] "
 
 const int nax = 1e6 + 5;
+int n, b, f, c;
+vector<int> children[nax];
