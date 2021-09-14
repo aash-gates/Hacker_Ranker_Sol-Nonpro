@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    val to_process = new PriorityQueue[(Int, Int, Int)]()(ord)
+
+    /* Initializes with the end as the root node, and seeds the
      * search with all its neighors*/
     tree(end) = new TreeNode(end, end, 0)
     for ((c, w) <- city_ref(end)) {
