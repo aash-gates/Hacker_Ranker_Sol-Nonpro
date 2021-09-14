@@ -22,3 +22,4 @@ object Solution {
     val cost = costc
 
     var children = List[Int]()
+
