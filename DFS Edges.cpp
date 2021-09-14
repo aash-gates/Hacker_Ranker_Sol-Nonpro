@@ -24,3 +24,5 @@ sim dor(rge<c> d) {
   ris << "]";
 }
 #else
+sim dor(const c &) { ris; }
+#endif
