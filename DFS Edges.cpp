@@ -26,3 +26,5 @@ sim dor(rge<c> d) {
 #else
 sim dor(const c &) { ris; }
 #endif
+};
+#define imie(x) " [" << #x ": " << (x) << "] "
