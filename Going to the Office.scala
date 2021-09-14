@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+            // do nothing
+          } else if (tree(best_alt).child_of(cn2)) {
             expand_city(best_alt, best(best_alt))
           } else {
             results(closure_i) = best(best_alt) + tree(best_alt).cost
