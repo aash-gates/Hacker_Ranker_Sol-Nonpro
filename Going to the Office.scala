@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    val repath_ord = Ordering[Int].on[(Int,Int,Int)](x => tree(x._1).pre)
+    val repath = PriorityQueue[(Int,Int,Int)]()(repath_ord)
+    for (i <- 0 until closures.length) {
       val (c1, c2) = closures(i)
       var (cn1, cn2) = (tree(c1), tree(c2))
       results(i) = tree(start).cost
