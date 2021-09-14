@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+
+    // In the event there's no path from start to finish
+    if (tree(start) == null) {
       return results
     }
 
