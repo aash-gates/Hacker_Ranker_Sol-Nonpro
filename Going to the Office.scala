@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+     * start number is less than the second */
+    for (i <- 0 until num_edges) {
+      val r = iter.next.split(" ").map(x => x.toInt)
       if (r(2) <= 0) {
          throw new IllegalArgumentException("weight must be positive")
       }
