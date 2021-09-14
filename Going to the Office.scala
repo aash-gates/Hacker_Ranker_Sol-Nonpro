@@ -29,6 +29,8 @@ object Solution {
 
 
     }
+        println(e) 
+      } else {
         println("Infinity")
       }
     }
