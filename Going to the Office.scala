@@ -29,6 +29,8 @@ object Solution {
 
 
     }
+    val closures = new Array[(Int, Int)](num_closures)
+    for (i <- 0 until num_closures) {
       val c = iter.next.split(" ").map(x => x.toInt)
       if (c(0) < c(1)) {
         closures(i) = (c(0), c(1))
