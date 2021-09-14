@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+    val opt_ord = Ordering[Int].on[Int](x => -(best(x) + tree(x).cost))
+    val options = PriorityQueue[Int]()(opt_ord)
 
     /* Expands routes around a given city */
     def expand_city (city: Int, 
