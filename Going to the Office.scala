@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+     * of it's children that have already been dealt with. */
+
+    // using an array for the stack because apparently popping from
     // a scala stack takes quadratic time
     val mark_stack = new Array[(Int, Int)](cities)
     mark_stack(0) = (end, 0)
