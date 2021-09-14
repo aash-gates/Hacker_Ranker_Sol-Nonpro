@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+    var cost_from_start = 0
+
     while (repath.length > 0) {
       val path = repath.dequeue()
       val (c1, c2, closure_i) = path
