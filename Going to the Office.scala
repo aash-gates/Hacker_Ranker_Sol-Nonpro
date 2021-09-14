@@ -29,6 +29,8 @@ object Solution {
 
 
     }
+    for (e <- get_fastest(start, end, num_cities, roads, closures)) {
+      if (e > 0) {
         println(e) 
       } else {
         println("Infinity")
