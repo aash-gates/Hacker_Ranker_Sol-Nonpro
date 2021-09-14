@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      val (c1, c2) = closures(i)
+      var (cn1, cn2) = (tree(c1), tree(c2))
+      results(i) = tree(start).cost
       if (cn1.parent == c2) {
         if ((c1 == start) || tree(start).child_of(cn1)) {
           repath += ((c1, c2, i))
