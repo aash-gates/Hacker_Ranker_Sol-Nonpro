@@ -28,7 +28,9 @@ object Solution {
     }
 
 
+
     /* Expands routes around a given city */
+    def expand_city (city: Int, 
                      cost: Int, 
                      exclude_parent: Boolean = false) {
       val c_node = tree(city)
