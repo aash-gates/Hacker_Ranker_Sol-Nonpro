@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+        roads(i) = (r(0), r(1), r(2))
+      } else {
         roads(i) = (r(1), r(0), r(2))
       }
     }
