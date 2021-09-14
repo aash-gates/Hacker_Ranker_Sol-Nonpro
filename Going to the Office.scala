@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+        for ((c, w) <- city_ref(n2)) {
+          if (tree(c) == null) {
+            to_process += ((n2, c, cost+w))
           } 
         }
       }
