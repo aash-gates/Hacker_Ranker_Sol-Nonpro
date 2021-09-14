@@ -13,3 +13,4 @@ import scala.compat.Platform.currentTime
 object Solution {
 
 
+  class TreeNode (numc:      Int,
