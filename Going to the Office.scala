@@ -29,6 +29,8 @@ object Solution {
 
 
     }
+        closures(i) = (c(1), c(0))
+      }
     }
 
     for (e <- get_fastest(start, end, num_cities, roads, closures)) {
