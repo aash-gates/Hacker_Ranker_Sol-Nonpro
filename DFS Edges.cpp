@@ -81,3 +81,4 @@ int main() {
 			children[a].push_back(x);
 	
 	for(auto p : cross)
+		children[p.first].push_back(p.second);
