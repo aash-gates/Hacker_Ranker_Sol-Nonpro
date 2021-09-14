@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+        roads(i) = (r(1), r(0), r(2))
+      }
     }
     params = iter.next.split(" ")
     val start = params(0).toInt
