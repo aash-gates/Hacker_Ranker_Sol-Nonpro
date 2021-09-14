@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      city_ref(i) = List()
+    }
+    for ((c1, c2, w) <- roads) {
       city_ref(c1) ::= (c2, w)
       city_ref(c2) ::= (c1, w)
     }
