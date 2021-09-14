@@ -18,3 +18,5 @@ sim, class b dor(pair < b, c > d) {
   ris << "(" << d.first << ", " << d.second << ")";
 }
 sim dor(rge<c> d) {
+  *this << "[";
+  for (auto it = d.b; it != d.e; ++it)
