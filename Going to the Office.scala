@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+  def main(args: Array[String]) {
+    val iter = io.Source.stdin.getLines
     var params = iter.next.split(" ")
     val num_cities = params(0).toInt
     val num_edges = params(1).toInt
