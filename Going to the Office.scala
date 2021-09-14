@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      var best_alt = 0 // a meaningless initial value
+      while (best_alt >= 0) {
         if (options.length == 0) {
           best_alt = -1
         } else {
