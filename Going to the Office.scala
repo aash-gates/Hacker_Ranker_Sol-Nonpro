@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+     * in order of how close they are to the start. This allows for 
+     * a reverse-bfs of sorts to be performed from the start. */
+
     val repath_ord = Ordering[Int].on[(Int,Int,Int)](x => tree(x._1).pre)
     val repath = PriorityQueue[(Int,Int,Int)]()(repath_ord)
     for (i <- 0 until closures.length) {
