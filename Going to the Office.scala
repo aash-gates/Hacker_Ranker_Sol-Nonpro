@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    }
+
+    override def toString(): String = {
       "parent:"+parent+
       " num:"+num+
       " cost:"+cost+
