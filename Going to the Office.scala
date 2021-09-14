@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      if (r(2) <= 0) {
+         throw new IllegalArgumentException("weight must be positive")
       }
       if (r(0) < r(1)) {
         roads(i) = (r(0), r(1), r(2))
