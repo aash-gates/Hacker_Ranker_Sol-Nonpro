@@ -10,3 +10,5 @@ sim > rge<c> range(c i, c j) { return rge<c>{i, j}; }
 sim > auto dud(c* x) -> decltype(cerr << *x, 0);
 sim > char dud(...);
 struct debug{
+#ifdef LOCAL
+~debug() { cerr << endl; }
