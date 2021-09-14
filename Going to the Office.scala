@@ -25,3 +25,4 @@ object Solution {
 
     def add_child(child: Int) {
       children ::= child
+    }
