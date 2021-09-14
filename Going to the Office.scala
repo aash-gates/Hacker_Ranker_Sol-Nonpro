@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      if ((cost < best(city)) || (best(city) == 0)) {
+        best(city) = cost
         options += city
       }
       /* neighbor index, neighbor cost */
