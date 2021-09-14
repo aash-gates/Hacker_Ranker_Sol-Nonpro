@@ -29,6 +29,8 @@ object Solution {
 
 
     }
+    params = iter.next.split(" ")
+    val start = params(0).toInt
     val end = params(1).toInt
     val num_closures = iter.next.toInt
     val closures = new Array[(Int, Int)](num_closures)
