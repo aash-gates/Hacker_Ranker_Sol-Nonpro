@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    }
+
+    val results = new Array[Int](closures.length)
 
     // In the event there's no path from start to finish
     if (tree(start) == null) {
