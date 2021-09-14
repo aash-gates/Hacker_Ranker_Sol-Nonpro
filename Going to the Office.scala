@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    /* Performs the search, prioritizing the cheapest routes. */
+    while (to_process.length > 0) {
+      val (n1, n2, cost) = to_process.dequeue()
       if (tree(n2) == null) {
         tree(n2) = new TreeNode(n2, n1, cost)
         tree(n1).add_child(n2)
