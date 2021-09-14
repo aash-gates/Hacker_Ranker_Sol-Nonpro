@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+                  end:      Int, 
+                  cities:   Int,
+                  roads:    Array[(Int, Int, Int)], 
                   closures: Array[(Int, Int)]): Array[Int] = {
     
 
