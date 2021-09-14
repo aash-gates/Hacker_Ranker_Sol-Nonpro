@@ -16,3 +16,4 @@ object Solution {
   class TreeNode (numc:      Int,
                   parentc:   Int, 
                   costc:     Int) {
+    
