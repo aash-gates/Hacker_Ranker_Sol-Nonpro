@@ -12,3 +12,5 @@ sim > char dud(...);
 struct debug{
 #ifdef LOCAL
 ~debug() { cerr << endl; }
+eni(!=) cerr << boolalpha << i; ris; }
+eni(==) ris << range(begin(i), end(i)); }
