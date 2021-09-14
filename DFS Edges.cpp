@@ -34,3 +34,5 @@ int n, b, f, c;
 vector<int> children[nax];
 vector<pair<int,int>> cross;
 vector<pair<int,int>> down;
+vector<int> ancestors;
+
