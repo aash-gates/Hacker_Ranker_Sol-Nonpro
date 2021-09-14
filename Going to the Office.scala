@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+        node.post = counter
+        counter += 1        
+      }
     }
 
 
