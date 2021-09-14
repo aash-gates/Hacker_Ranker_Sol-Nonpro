@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+    var current = start
+    expand_city(current, 0, true)
     var cost_from_start = 0
 
     while (repath.length > 0) {
