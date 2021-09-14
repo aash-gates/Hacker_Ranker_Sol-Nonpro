@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+               (best(n_i) > (cost + n_c)) ) )  {
+          best(n_i) = cost + n_c
           options += n_i
         }
       }
