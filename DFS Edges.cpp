@@ -46,3 +46,5 @@ void dfs(int a, int next) {
 		for(int i = next + 1; i <= n && (int) cross.size() < c; ++i) {
 			cross.push_back({i, next});
 		}
+		dfs(a, next + 1);
+	}
