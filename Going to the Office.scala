@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+    var post = 0
+    def child_of(node: TreeNode): Boolean = {
+      (pre > node.pre) && (post < node.post)
     }
 
     override def toString(): String = {
