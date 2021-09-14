@@ -64,3 +64,5 @@ int main() {
 	dfs(1, 2);
 	if((int) down.size() < max(f, b) || (int) cross.size() < c) {
 		puts("-1");
+		return 0;
+	}
