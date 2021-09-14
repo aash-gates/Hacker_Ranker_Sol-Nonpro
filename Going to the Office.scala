@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+                     exclude_parent: Boolean = false) {
+      val c_node = tree(city)
       if ((cost < best(city)) || (best(city) == 0)) {
         best(city) = cost
         options += city
