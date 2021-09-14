@@ -50,3 +50,5 @@ void dfs(int a, int next) {
 	}
 	else {
 		ancestors.push_back(a);
+		dfs(next, next + 1);
+		ancestors.pop_back();
