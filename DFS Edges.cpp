@@ -44,3 +44,5 @@ void dfs(int a, int next) {
 	int rem = n - next + 1;
 	if(c - (int) cross.size() >= rem - 1) {
 		for(int i = next + 1; i <= n && (int) cross.size() < c; ++i) {
+			cross.push_back({i, next});
+		}
