@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+
+    while (s_i > 0) {
+      s_i -= 1
       val (n_i, c_i) = mark_stack(s_i)
       mark_stack(s_i) = null
       val node = tree(n_i)
