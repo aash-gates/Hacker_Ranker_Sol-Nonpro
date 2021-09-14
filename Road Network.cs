@@ -1,3 +1,6 @@
+            for (; idx[source] < graph[source].Count; ++idx[source]) {
+                var next = graph[source][idx[source]];
+                if (distance[next] != distance[source] + 1) {
                     continue;
                 }
                 if (capacity[source, next] > flow[source, next]) {
