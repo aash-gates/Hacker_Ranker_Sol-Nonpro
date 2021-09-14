@@ -62,3 +62,5 @@ int main() {
 	++n;
 	b -= n - 1;
 	dfs(1, 2);
+	if((int) down.size() < max(f, b) || (int) cross.size() < c) {
+		puts("-1");
