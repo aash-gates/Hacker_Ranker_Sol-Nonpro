@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+            expand_city(best_alt, best(best_alt))
+          } else {
             results(closure_i) = best(best_alt) + tree(best_alt).cost
             options += best_alt
             best_alt = -1
