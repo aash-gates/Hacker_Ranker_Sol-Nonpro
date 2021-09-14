@@ -78,3 +78,5 @@ int main() {
 			}
 	for(int a = 1; a <= n; ++a)
 		for(int x : tmp[a])
+			children[a].push_back(x);
+	
