@@ -28,6 +28,9 @@ object Solution {
     }
 
 
+      "parent:"+parent+
+      " num:"+num+
+      " cost:"+cost+
       " order:"+pre+" "+post+
       " children:"+children
     }
