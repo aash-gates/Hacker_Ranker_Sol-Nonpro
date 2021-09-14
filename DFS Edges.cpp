@@ -22,3 +22,5 @@ sim dor(rge<c> d) {
   for (auto it = d.b; it != d.e; ++it)
     *this << ", " + 2 * (it == d.b) << *it;
   ris << "]";
+}
+#else
