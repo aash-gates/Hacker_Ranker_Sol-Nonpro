@@ -20,3 +20,4 @@ object Solution {
     val num = numc
     val parent = parentc
     val cost = costc
+
