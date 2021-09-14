@@ -28,6 +28,8 @@ object Solution {
     }
 
 
+      }
+      expand_city(current, cost_from_start, true)
       var best_alt = 0 // a meaningless initial value
       while (best_alt >= 0) {
         if (options.length == 0) {
