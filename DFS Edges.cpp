@@ -16,3 +16,5 @@ eni(!=) cerr << boolalpha << i; ris; }
 eni(==) ris << range(begin(i), end(i)); }
 sim, class b dor(pair < b, c > d) {
   ris << "(" << d.first << ", " << d.second << ")";
+}
+sim dor(rge<c> d) {
