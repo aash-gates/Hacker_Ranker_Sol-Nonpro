@@ -54,3 +54,5 @@ void dfs(int a, int next) {
 		ancestors.pop_back();
 	}
 }
+
+vector<int> tmp[nax];
