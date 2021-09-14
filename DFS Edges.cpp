@@ -56,3 +56,5 @@ void dfs(int a, int next) {
 }
 
 vector<int> tmp[nax];
+
+int main() {
