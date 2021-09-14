@@ -84,3 +84,20 @@ int main() {
 		children[p.first].push_back(p.second);
 	
 	for(auto p : down) {
+		if(f) {
+			--f;
+			children[p.first].push_back(p.second);
+		}
+		if(b) {
+			--b;
+			children[p.second].push_back(p.first);
+		}
+	}
+	debug() << cross[0];
+	printf("%d\n", n);
+	for(int i = 1; i <= n; ++i) {
+		printf("%d ", (int) children[i].size());
+		for(int x : children[i]) printf("%d ", x);
+		puts("");
+	}
+}
