@@ -35,3 +35,4 @@ func main() {
 			var str string
 			fmt.Scanf("%s", &str)
 
+			for _, l := range str {
