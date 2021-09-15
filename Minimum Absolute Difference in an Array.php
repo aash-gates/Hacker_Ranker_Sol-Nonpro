@@ -19,3 +19,4 @@ foreach($asort as $key=>$value) {
     if (abs($asort[$key+1] - $asort[$key]) < $diff) {
         $diff = abs($asort[$key+1] - $asort[$key]);
     }
+}
