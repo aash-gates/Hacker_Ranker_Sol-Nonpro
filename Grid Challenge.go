@@ -57,3 +57,4 @@ func main() {
 		fmt.Println("YES")
 	skip:
 	}
+}
