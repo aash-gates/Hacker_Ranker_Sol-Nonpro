@@ -17,3 +17,4 @@ foreach ($contests as $contest) {
 
 rsort($important);
 
+$i = 0;
