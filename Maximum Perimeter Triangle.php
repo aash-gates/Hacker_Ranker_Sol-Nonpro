@@ -42,3 +42,4 @@ for($i=$n-1; $i>=0; $i--) {
                 } elseif($a>$max_a) {
                     $found=array();
                     $found[]=array($a, $b, $c);
+                    $max_a=$a;
