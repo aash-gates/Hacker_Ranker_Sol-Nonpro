@@ -9,3 +9,4 @@ $important = array();
 $luck = 0;
 foreach ($contests as $contest) {
   if ($contest[1] == 1) {
+    $important[] = $contest[0];
