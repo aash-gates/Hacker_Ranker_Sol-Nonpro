@@ -47,3 +47,4 @@ for($i=$n-1; $i>=0; $i--) {
                     $a=null;
                     $b=null;
                     $c=null;
+                } elseif($a==$max_a) {
