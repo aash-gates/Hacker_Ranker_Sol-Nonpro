@@ -14,3 +14,4 @@ func (s RuneSlice) Less(i, j int) bool { return s[i] < s[j] }
 func (s RuneSlice) Swap(i, j int)      { s[i], s[j] = s[j], s[i] }
 
 // Sort is a convenience method.
+func (s RuneSlice) Sort() {
