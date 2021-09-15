@@ -18,3 +18,4 @@ func (s RuneSlice) Sort() {
 	sort.Sort(s)
 }
 
+func main() {
