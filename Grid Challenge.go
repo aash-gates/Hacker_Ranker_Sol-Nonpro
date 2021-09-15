@@ -25,3 +25,4 @@ func main() {
 
 	for i := 0; i < T; i++ {
 		var N int
+		var rows []RuneSlice
