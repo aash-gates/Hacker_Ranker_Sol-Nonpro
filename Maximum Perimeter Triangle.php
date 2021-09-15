@@ -49,3 +49,4 @@ for($i=$n-1; $i>=0; $i--) {
                     $c=null;
                 } elseif($a==$max_a) {
                     if($c>$max_c) {
+                        $found=array();
