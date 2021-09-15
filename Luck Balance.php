@@ -20,3 +20,4 @@ rsort($important);
 $i = 0;
 foreach ($important as $contest) {
   if ($i < $k) {
+    $luck += $contest;
