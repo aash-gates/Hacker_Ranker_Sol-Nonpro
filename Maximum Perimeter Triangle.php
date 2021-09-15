@@ -23,3 +23,4 @@ for($i=$n-1; $i>=0; $i--) {
         $b=$arr[$i];
     } else {
         $a=$arr[$i];
+        if($a+$b>$c && $a+$c>$b && $b+$c>$a) {
