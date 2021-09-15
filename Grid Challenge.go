@@ -41,3 +41,4 @@ func main() {
 			sort.Sort(row)
 
 			rows = append(rows, row)
+		}
