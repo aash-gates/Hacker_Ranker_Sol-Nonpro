@@ -18,3 +18,4 @@ foreach ($contests as $contest) {
 rsort($important);
 
 $i = 0;
+foreach ($important as $contest) {
