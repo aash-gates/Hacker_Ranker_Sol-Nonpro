@@ -15,3 +15,4 @@ func (s RuneSlice) Swap(i, j int)      { s[i], s[j] = s[j], s[i] }
 
 // Sort is a convenience method.
 func (s RuneSlice) Sort() {
+	sort.Sort(s)
