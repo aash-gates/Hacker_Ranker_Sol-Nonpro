@@ -15,3 +15,4 @@ sort($a, SORT_NUMERIC); $asort = $a;
 // set diff to value higher than max possible integer
 $diff = pow(10, 10); // || INF
 
+foreach($asort as $key=>$value) {
