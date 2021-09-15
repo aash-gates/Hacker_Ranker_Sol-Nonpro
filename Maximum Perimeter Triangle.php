@@ -9,3 +9,4 @@ $arr=array_map('intval', $arr);
 sort($arr);
 
 $c=null;
+$b=null;
