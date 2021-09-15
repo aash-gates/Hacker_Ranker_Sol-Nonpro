@@ -7,3 +7,4 @@ for ($i = 0; $i < $n; $i++) {
 
 $important = array();
 $luck = 0;
+foreach ($contests as $contest) {
