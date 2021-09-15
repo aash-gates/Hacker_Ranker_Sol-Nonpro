@@ -6,3 +6,4 @@ fscanf($handle,"%d",$n);
 $a_temp = fgets($handle);
 
 $a = explode(" ",$a_temp);
+
