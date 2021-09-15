@@ -71,3 +71,4 @@ for($i=$n-1; $i>=0; $i--) {
 if(empty($found))
     echo -1;
 else {
+    $found=$found[0];
