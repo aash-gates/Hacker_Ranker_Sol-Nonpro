@@ -51,3 +51,4 @@ for($i=$n-1; $i>=0; $i--) {
                     if($c>$max_c) {
                         $found=array();
                         $found[]=array($a, $b, $c);
+                        $a=null;
