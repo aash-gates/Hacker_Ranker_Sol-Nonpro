@@ -10,3 +10,4 @@ sort($arr);
 
 $c=null;
 $b=null;
+$d=null;
