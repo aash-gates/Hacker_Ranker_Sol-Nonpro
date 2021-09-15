@@ -16,3 +16,4 @@ foreach ($contests as $contest) {
 }
 
 rsort($important);
+
