@@ -13,3 +13,4 @@ foreach ($contests as $contest) {
   } else {
     $luck += $contest[0];
   }
+}
