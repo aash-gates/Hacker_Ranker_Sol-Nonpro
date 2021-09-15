@@ -46,3 +46,4 @@ for($i=$n-1; $i>=0; $i--) {
                     $max_c=$c;
                     $a=null;
                     $b=null;
+                    $c=null;
