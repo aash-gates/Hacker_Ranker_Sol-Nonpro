@@ -52,3 +52,4 @@ for($i=$n-1; $i>=0; $i--) {
                         $found=array();
                         $found[]=array($a, $b, $c);
                         $a=null;
+                        $b=null;
