@@ -51,3 +51,4 @@ func main() {
 				if (rows[k])[l] > (rows[k+1])[l] {
 					fmt.Println("NO")
 					goto skip
+				}
