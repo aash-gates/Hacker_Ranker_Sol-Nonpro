@@ -48,3 +48,4 @@ for($i=$n-1; $i>=0; $i--) {
                     $b=null;
                     $c=null;
                 } elseif($a==$max_a) {
+                    if($c>$max_c) {
