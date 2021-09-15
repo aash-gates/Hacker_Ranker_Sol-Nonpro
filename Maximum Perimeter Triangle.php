@@ -27,3 +27,4 @@ for($i=$n-1; $i>=0; $i--) {
             $p=$a+$b+$c;
             if(empty($max)) {
                 $max=$p;
+                $found[]=array($a, $b, $c);
