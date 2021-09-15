@@ -36,3 +36,4 @@ for($i=$n-1; $i>=0; $i--) {
             } elseif($p==$max) {
                 if($a==$max_a && $c==$max_c) {
                     $found[]=array($a, $b, $c);
+                    $a=null;
