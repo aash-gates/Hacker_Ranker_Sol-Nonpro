@@ -32,3 +32,4 @@ func main() {
 		for j := 0; j < N; j++ {
 			var row RuneSlice
 
+			var str string
