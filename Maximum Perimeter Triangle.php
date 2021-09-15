@@ -34,3 +34,4 @@ for($i=$n-1; $i>=0; $i--) {
                 $b=null;
                 $c=null;
             } elseif($p==$max) {
+                if($a==$max_a && $c==$max_c) {
