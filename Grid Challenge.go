@@ -23,3 +23,4 @@ func main() {
 	var T int
 	fmt.Scanf("%d", &T)
 
+	for i := 0; i < T; i++ {
