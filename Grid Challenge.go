@@ -6,3 +6,4 @@ import (
 	"sort"
 )
 
+// RuneSlice attaches the methods of sort.Interface to []rune, sorting in increasing order.
