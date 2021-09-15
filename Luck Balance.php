@@ -12,3 +12,4 @@ foreach ($contests as $contest) {
     $important[] = $contest[0];
   } else {
     $luck += $contest[0];
+  }
