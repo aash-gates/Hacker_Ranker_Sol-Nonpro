@@ -28,3 +28,4 @@ for($i=$n-1; $i>=0; $i--) {
             if(empty($max)) {
                 $max=$p;
                 $found[]=array($a, $b, $c);
+                $max_a=$a;
