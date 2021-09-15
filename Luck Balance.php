@@ -27,3 +27,4 @@ foreach ($important as $contest) {
   }
 }
 
+echo $luck;
