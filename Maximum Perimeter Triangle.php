@@ -50,3 +50,4 @@ for($i=$n-1; $i>=0; $i--) {
                 } elseif($a==$max_a) {
                     if($c>$max_c) {
                         $found=array();
+                        $found[]=array($a, $b, $c);
