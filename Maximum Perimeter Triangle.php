@@ -22,3 +22,4 @@ for($i=$n-1; $i>=0; $i--) {
     } elseif($i==$n-2 || empty($b)) {
         $b=$arr[$i];
     } else {
+        $a=$arr[$i];
