@@ -13,3 +13,4 @@ $b=null;
 $d=null;
 $max=null;
 $found=array();
+$max_c=null;
