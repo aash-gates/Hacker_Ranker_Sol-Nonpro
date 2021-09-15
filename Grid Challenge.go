@@ -36,3 +36,4 @@ func main() {
 			fmt.Scanf("%s", &str)
 
 			for _, l := range str {
+				row = append(row, l)
