@@ -10,3 +10,4 @@ import (
 type RuneSlice []rune
 
 func (s RuneSlice) Len() int           { return len(s) }
+func (s RuneSlice) Less(i, j int) bool { return s[i] < s[j] }
