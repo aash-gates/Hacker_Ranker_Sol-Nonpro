@@ -55,3 +55,4 @@ for($i=$n-1; $i>=0; $i--) {
                         $b=null;
                         $c=null;
                         $max_a=$a;
+                        $max_c=$c;
