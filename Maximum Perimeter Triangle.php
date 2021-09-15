@@ -18,3 +18,4 @@ $max_a=null;
 
 for($i=$n-1; $i>=0; $i--) {
     if($i==$n-1 || empty($c)) {
+        $c=$arr[$i];
