@@ -37,3 +37,4 @@ func main() {
 
 			for _, l := range str {
 				row = append(row, l)
+			}
