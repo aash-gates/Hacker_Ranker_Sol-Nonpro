@@ -20,3 +20,4 @@ foreach($asort as $key=>$value) {
         $diff = abs($asort[$key+1] - $asort[$key]);
     }
 }
+
