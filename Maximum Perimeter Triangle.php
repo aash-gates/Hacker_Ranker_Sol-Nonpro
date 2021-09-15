@@ -26,3 +26,4 @@ for($i=$n-1; $i>=0; $i--) {
         if($a+$b>$c && $a+$c>$b && $b+$c>$a) {
             $p=$a+$b+$c;
             if(empty($max)) {
+                $max=$p;
