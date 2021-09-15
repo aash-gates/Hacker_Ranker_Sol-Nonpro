@@ -7,3 +7,4 @@ $a_temp = fgets($handle);
 
 $a = explode(" ",$a_temp);
 
+array_walk($a,'intval');
