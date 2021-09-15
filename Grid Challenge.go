@@ -21,3 +21,4 @@ func (s RuneSlice) Sort() {
 func main() {
 
 	var T int
+	fmt.Scanf("%d", &T)
