@@ -20,3 +20,4 @@ func (s RuneSlice) Sort() {
 
 func main() {
 
+	var T int
