@@ -30,3 +30,4 @@ func main() {
 		fmt.Scanf("%d", &N)
 
 		for j := 0; j < N; j++ {
+			var row RuneSlice
