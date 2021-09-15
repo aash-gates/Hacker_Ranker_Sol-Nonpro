@@ -8,3 +8,4 @@ calories.sort!.reverse!
 
 a = 0
 i = 0
+calories.each do |x|
