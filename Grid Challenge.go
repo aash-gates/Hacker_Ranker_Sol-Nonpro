@@ -48,3 +48,4 @@ func main() {
 		for k := 0; k < N-1; k++ {
 			for l := 0; l < N; l++ {
 				//fmt.Printf("Comparing %+q,%+q\n", rows[k][l], rows[k+1][l])
+				if (rows[k])[l] > (rows[k+1])[l] {
