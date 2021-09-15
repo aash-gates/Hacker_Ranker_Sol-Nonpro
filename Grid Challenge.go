@@ -9,3 +9,4 @@ import (
 // RuneSlice attaches the methods of sort.Interface to []rune, sorting in increasing order.
 type RuneSlice []rune
 
+func (s RuneSlice) Len() int           { return len(s) }
