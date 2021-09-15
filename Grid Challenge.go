@@ -33,3 +33,4 @@ func main() {
 			var row RuneSlice
 
 			var str string
+			fmt.Scanf("%s", &str)
