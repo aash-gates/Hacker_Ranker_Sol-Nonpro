@@ -6,3 +6,4 @@ $n=intval(trim(fgets($_fp)));
 $line=trim(fgets($_fp));
 $arr=explode(' ', $line);
 $arr=array_map('intval', $arr);
+sort($arr);
