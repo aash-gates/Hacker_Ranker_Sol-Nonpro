@@ -43,3 +43,4 @@ func main() {
 			rows = append(rows, row)
 		}
 
+		//fmt.Printf("%+q\n", rows)
