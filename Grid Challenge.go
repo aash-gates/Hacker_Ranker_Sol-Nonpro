@@ -46,3 +46,4 @@ func main() {
 		//fmt.Printf("%+q\n", rows)
 
 		for k := 0; k < N-1; k++ {
+			for l := 0; l < N; l++ {
