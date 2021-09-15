@@ -12,3 +12,4 @@ $c=null;
 $b=null;
 $d=null;
 $max=null;
+$found=array();
