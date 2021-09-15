@@ -22,3 +22,4 @@ foreach($asort as $key=>$value) {
 }
 
 print($diff);
+
