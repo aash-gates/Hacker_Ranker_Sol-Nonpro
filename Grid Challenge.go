@@ -52,3 +52,4 @@ func main() {
 					fmt.Println("NO")
 					goto skip
 				}
+			}
