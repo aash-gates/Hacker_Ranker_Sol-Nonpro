@@ -44,3 +44,4 @@ for($i=$n-1; $i>=0; $i--) {
                     $found[]=array($a, $b, $c);
                     $max_a=$a;
                     $max_c=$c;
+                    $a=null;
