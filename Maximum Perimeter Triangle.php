@@ -72,3 +72,4 @@ if(empty($found))
     echo -1;
 else {
     $found=$found[0];
+    $str=implode(' ', $found);
