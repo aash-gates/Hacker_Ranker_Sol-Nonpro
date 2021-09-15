@@ -28,3 +28,4 @@ func main() {
 		var rows []RuneSlice
 
 		fmt.Scanf("%d", &N)
+
