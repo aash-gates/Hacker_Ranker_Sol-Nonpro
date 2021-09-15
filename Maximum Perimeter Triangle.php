@@ -16,3 +16,4 @@ $found=array();
 $max_c=null;
 $max_a=null;
 
+for($i=$n-1; $i>=0; $i--) {
