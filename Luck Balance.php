@@ -22,3 +22,4 @@ foreach ($important as $contest) {
   if ($i < $k) {
     $luck += $contest;
     $i++;
+  } else {
