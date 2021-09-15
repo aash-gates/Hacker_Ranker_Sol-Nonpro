@@ -7,3 +7,4 @@ calories = calories.split(' ').map(&:to_i)
 calories.sort!.reverse!
 
 a = 0
+i = 0
