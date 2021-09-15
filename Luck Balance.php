@@ -24,3 +24,4 @@ foreach ($important as $contest) {
     $i++;
   } else {
     $luck -= $contest;
+  }
