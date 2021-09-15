@@ -10,3 +10,4 @@ $a = explode(" ",$a_temp);
 array_walk($a,'intval');
 
 // the Yoruba's say: gidigba o shi ilekun :-)
+sort($a, SORT_NUMERIC); $asort = $a;
