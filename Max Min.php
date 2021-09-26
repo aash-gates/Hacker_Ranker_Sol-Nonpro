@@ -7,3 +7,4 @@ $min=1<<63;
 $min=~$min;
 $i=0;
 $j=$kids-1;
+while($j<count($nums)){
