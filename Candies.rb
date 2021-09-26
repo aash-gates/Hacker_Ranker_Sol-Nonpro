@@ -16,3 +16,4 @@ candies2[n] = 1
         candies2[i] = candies2[i+1] + 1
     else
         candies2[i] = 1
+    end
