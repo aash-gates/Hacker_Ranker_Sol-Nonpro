@@ -6,3 +6,4 @@ fscanf(STDIN, "%[ -~]", $string);
 $explode=explode(" ",$string);
 
 rsort($explode);
+
