@@ -15,3 +15,4 @@
         $worstItemValue = $numItems - $i;
         
         if($items[$i] != $worstItemValue) {
+            $worstItemPos = $itemsReverse[$worstItemValue];
