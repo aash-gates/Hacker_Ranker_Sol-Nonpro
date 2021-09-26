@@ -12,3 +12,4 @@
     $itemsReverse = array_flip($items);
     
     for($i = 0; $i < $numItems; $i++) {
+        $worstItemValue = $numItems - $i;
