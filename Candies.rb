@@ -25,3 +25,4 @@ for i in 1..n
     else
         ans += candies2[i]
     end
+end
