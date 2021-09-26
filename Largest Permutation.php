@@ -10,3 +10,4 @@
     $numItems--;
     
     $itemsReverse = array_flip($items);
+    
