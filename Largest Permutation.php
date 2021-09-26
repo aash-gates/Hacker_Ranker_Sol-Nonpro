@@ -25,3 +25,4 @@
             $itemsReverse[$firstItemValue] = $worstItemPos;
             $itemsReverse[$worstItemValue] = $firstItemPos;
             
+            $numSwaps--;
