@@ -8,4 +8,5 @@ $_fp = fopen("php://stdin", "r");
     $line_of_text = fgets($_fp);
     $toysPrices = array_map('intval', explode(' ', $line_of_text));  
     sort($toysPrices , SORT_NUMERIC );
+    $sumOfPrices = 0;
     for ($i=0;$i<$N;$i++){
