@@ -5,3 +5,4 @@ fscanf(STDIN, "%d %d", $N,$K);
 fscanf(STDIN, "%[ -~]", $string);
 $explode=explode(" ",$string);
 
+rsort($explode);
