@@ -14,3 +14,4 @@ while($j<count($nums)){
     $i++;
     $j++;
 }
+echo "$min\n";    
