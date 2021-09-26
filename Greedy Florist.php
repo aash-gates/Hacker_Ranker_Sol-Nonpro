@@ -14,3 +14,4 @@ $client=0;
 foreach($explode as $value){
 
     $total+=$value*($tour+1);
+    
