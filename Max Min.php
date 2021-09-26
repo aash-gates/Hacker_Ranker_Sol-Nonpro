@@ -13,3 +13,4 @@ while($j<count($nums)){
         $min=$diff;
     $i++;
     $j++;
+}
