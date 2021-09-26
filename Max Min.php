@@ -11,3 +11,4 @@ while($j<count($nums)){
     $diff=$nums[$j]-$nums[$i];
     if($diff<$min)
         $min=$diff;
+    $i++;
