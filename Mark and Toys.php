@@ -10,3 +10,4 @@ $_fp = fopen("php://stdin", "r");
     sort($toysPrices , SORT_NUMERIC );
     $sumOfPrices = 0;
     for ($i=0;$i<$N;$i++){
+        $sumOfPrices += $toysPrices[$i];
