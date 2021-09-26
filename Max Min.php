@@ -5,3 +5,4 @@ while(fscanf(STDIN,"%d",$num)){$nums[]=$num;}
 sort($nums);
 $min=1<<63;
 $min=~$min;
+$i=0;
