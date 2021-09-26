@@ -5,3 +5,4 @@ $_fp = fopen("php://stdin", "r");
     $data = explode(' ', $line_of_text);
     $N = (int)$data[0];
     $K = (int)$data[1];
+    $line_of_text = fgets($_fp);
