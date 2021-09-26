@@ -5,3 +5,4 @@
     $items = explode(' ', trim(fgets($fp)));
     
     for($i = 0; $i < count($items); $i++) {
+        $items[$i]--;
