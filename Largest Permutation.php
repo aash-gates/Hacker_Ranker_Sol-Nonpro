@@ -23,3 +23,4 @@
             $items[$worstItemPos] = $firstItemValue;
             
             $itemsReverse[$firstItemValue] = $worstItemPos;
+            $itemsReverse[$worstItemValue] = $firstItemPos;
