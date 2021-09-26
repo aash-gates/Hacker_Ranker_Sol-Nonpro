@@ -14,3 +14,4 @@
     for($i = 0; $i < $numItems; $i++) {
         $worstItemValue = $numItems - $i;
         
+        if($items[$i] != $worstItemValue) {
