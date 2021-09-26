@@ -15,3 +15,4 @@ $_fp = fopen("php://stdin", "r");
             echo ($i);
             exit();
         }
+    } 
