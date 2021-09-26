@@ -37,3 +37,4 @@
         $result .= ($items[$i] + 1) . ' ';
     }
     trim($result);
+    echo $result . PHP_EOL;
