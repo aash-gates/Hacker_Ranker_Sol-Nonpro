@@ -8,3 +8,4 @@ $min=~$min;
 $i=0;
 $j=$kids-1;
 while($j<count($nums)){
+    $diff=$nums[$j]-$nums[$i];
