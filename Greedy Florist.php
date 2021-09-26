@@ -23,3 +23,4 @@ foreach($explode as $value){
 }
 
 echo $total;
+?>
