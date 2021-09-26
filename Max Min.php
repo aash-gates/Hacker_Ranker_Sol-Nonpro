@@ -10,3 +10,4 @@ $j=$kids-1;
 while($j<count($nums)){
     $diff=$nums[$j]-$nums[$i];
     if($diff<$min)
+        $min=$diff;
