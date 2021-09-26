@@ -9,3 +9,4 @@ rsort($explode);
 
 $total=0;
 $tour=0;
+$client=0;
