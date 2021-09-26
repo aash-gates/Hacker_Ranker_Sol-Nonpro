@@ -8,3 +8,4 @@ $explode=explode(" ",$string);
 rsort($explode);
 
 $total=0;
+$tour=0;
