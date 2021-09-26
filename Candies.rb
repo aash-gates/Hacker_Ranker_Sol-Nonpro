@@ -10,3 +10,4 @@ for i in 2..n
         candies1[i] = 1
     end
 end
+candies2[n] = 1
