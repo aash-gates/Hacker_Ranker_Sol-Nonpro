@@ -19,3 +19,4 @@ candies2[n] = 1
     end
 }
 ans = 0
+for i in 1..n
