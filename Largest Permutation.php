@@ -35,3 +35,4 @@
     $result = '';
     for($i = 0; $i < count($items); $i++) {
         $result .= ($items[$i] + 1) . ' ';
+    }
