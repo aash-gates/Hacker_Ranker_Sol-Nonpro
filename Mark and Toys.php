@@ -14,3 +14,4 @@ $_fp = fopen("php://stdin", "r");
         if ($sumOfPrices > $K){
             echo ($i);
             exit();
+        }
