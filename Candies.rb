@@ -22,3 +22,4 @@ ans = 0
 for i in 1..n
     if candies1[i] >= candies2[i]
         ans += candies1[i]
+    else
