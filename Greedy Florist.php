@@ -16,3 +16,4 @@ foreach($explode as $value){
     $total+=$value*($tour+1);
     
     $client++;
+    if($client == $K){
