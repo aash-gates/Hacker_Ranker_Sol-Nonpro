@@ -11,3 +11,4 @@ $total=0;
 $tour=0;
 $client=0;
 
+foreach($explode as $value){
