@@ -9,3 +9,4 @@ for i in 2..n
     else
         candies1[i] = 1
     end
+end
