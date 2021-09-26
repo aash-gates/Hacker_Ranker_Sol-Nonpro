@@ -8,3 +8,4 @@ for i in 2..n
         candies1[i] = candies1[i-1] + 1
     else
         candies1[i] = 1
+    end
