@@ -7,3 +7,4 @@ $_fp = fopen("php://stdin", "r");
     $K = (int)$data[1];
     $line_of_text = fgets($_fp);
     $toysPrices = array_map('intval', explode(' ', $line_of_text));  
+    sort($toysPrices , SORT_NUMERIC );
