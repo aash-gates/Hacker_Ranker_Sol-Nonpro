@@ -1,1 +1,2 @@
 <?php
+fscanf(STDIN,"%s");
