@@ -6,3 +6,4 @@ candies1[1] = 1
 for i in 2..n
     if line[i-1] < line[i]
         candies1[i] = candies1[i-1] + 1
+    else
