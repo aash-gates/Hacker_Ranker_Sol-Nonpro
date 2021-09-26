@@ -8,3 +8,4 @@
         $items[$i]--;
     }
     $numItems--;
+    
