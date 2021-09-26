@@ -27,3 +27,4 @@
             
             $numSwaps--;
             if($numSwaps == 0) {
+                break;
