@@ -14,3 +14,4 @@ candies2[n] = 1
 (n-1).downto(1){ |i|
     if line[i] > line[i+1]
         candies2[i] = candies2[i+1] + 1
+    else
