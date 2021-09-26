@@ -19,3 +19,4 @@
             $firstItemValue = $items[$i];
             $firstItemPos = $i;
 
+            $items[$firstItemPos] = $worstItemValue;
