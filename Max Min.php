@@ -12,3 +12,4 @@ while($j<count($nums)){
     if($diff<$min)
         $min=$diff;
     $i++;
+    $j++;
