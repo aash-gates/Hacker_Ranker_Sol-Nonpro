@@ -18,3 +18,4 @@ candies2[n] = 1
         candies2[i] = 1
     end
 }
+ans = 0
