@@ -26,3 +26,4 @@
             $itemsReverse[$worstItemValue] = $firstItemPos;
             
             $numSwaps--;
+            if($numSwaps == 0) {
