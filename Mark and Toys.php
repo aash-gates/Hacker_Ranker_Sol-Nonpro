@@ -13,3 +13,4 @@ $_fp = fopen("php://stdin", "r");
         $sumOfPrices += $toysPrices[$i];
         if ($sumOfPrices > $K){
             echo ($i);
+            exit();
