@@ -19,3 +19,4 @@ foreach($explode as $value){
     if($client == $K){
         $tour++;
         $client=0;
+    }
