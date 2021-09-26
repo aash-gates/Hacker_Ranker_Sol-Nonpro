@@ -26,3 +26,4 @@ for i in 1..n
         ans += candies2[i]
     end
 end
+puts ans
