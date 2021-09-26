@@ -20,3 +20,4 @@ candies2[n] = 1
 }
 ans = 0
 for i in 1..n
+    if candies1[i] >= candies2[i]
