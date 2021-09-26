@@ -11,3 +11,4 @@ for i in 2..n
     end
 end
 candies2[n] = 1
+(n-1).downto(1){ |i|
