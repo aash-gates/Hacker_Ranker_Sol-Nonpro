@@ -17,3 +17,4 @@ $_fp = fopen("php://stdin", "r");
         }
     } 
     echo ($N);
+    
