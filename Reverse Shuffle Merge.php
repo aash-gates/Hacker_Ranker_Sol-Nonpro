@@ -32,3 +32,5 @@ while (strlen($out) != count($S)/2) {
 
     while ($written[$S[$next_bottleneck]] >= $needs[$next_bottleneck]) {
         $next_bottleneck++;
+    }
+
