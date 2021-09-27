@@ -9,3 +9,4 @@ for( $i = 0; $i < $tests; $i++ )
     sort($a);
     rsort($b);
     $r = true;
+    foreach( $a as $k => $v )
