@@ -18,3 +18,4 @@ uasort($custs, function($a, $b){
     if ($aArr[1] > $bArr[1]) {
         return 1;
     } elseif ($aArr[1] < $bArr[1]) {
+        return -1;
