@@ -38,3 +38,4 @@ for($z=0;$z<$T;$z++){
                 $cy++;
                 $count+=$cx*$Y[sizeof($Y)-1];
                 unset($Y[sizeof($Y)-1]);
+            } else {
