@@ -9,3 +9,4 @@ for($z=0;$z<$T;$z++){
     $count=0;
     $MN=fgets($fp);
     $explode=explode(" ",$MN);
+    $M=$explode[0];
