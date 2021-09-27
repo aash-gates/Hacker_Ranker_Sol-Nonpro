@@ -50,3 +50,5 @@ while (strlen($out) != count($S)/2) {
     while ($lastPos != $strPos) {
         $nextToUse[$S[$lastPos]]++;
         $lastPos++;
+    }
+
