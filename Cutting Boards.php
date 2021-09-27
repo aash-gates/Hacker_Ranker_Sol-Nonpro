@@ -24,3 +24,4 @@ for($z=0;$z<$T;$z++){
     while(sizeof($Y)||sizeof($X)){
         $count=$count%$modulo;
         if(sizeof($Y)&&sizeof($X)){
+            if($Y[sizeof($Y)-1]>$X[sizeof($X)-1]){
