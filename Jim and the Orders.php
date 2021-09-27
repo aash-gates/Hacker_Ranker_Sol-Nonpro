@@ -26,3 +26,4 @@ uasort($custs, function($a, $b){
     }
     return 0;
 });
+echo implode(' ', array_keys($custs));
