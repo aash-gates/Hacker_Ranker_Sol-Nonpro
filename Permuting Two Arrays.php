@@ -16,3 +16,4 @@ for( $i = 0; $i < $tests; $i++ )
     }
     echo $r ? "YES\n" : "NO\n";
 }
+
