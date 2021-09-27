@@ -28,3 +28,5 @@ $next_bottleneck = 0;
 $lastPos = 0;
 $out = '';
 
+while (strlen($out) != count($S)/2) {
+
