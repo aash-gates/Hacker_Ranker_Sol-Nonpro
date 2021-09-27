@@ -46,3 +46,4 @@ for($z=0;$z<$T;$z++){
         }
     }
     echo ($count%$modulo)."\n";
+}
