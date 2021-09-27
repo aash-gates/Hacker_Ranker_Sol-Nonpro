@@ -11,3 +11,4 @@ for( $i = 0; $i < $tests; $i++ )
     $r = true;
     foreach( $a as $k => $v )
     {
+        if( $v + $b[$k] < $K )
