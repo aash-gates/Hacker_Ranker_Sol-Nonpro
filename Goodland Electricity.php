@@ -21,3 +21,4 @@ while ($needLight < $n && !$impossible) {
 }
 
 echo $impossible ? '-1' : $answer;
+?>
