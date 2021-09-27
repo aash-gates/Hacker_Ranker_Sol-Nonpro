@@ -17,3 +17,4 @@ while ($needLight < $n && !$impossible) {
             break;
         }
     }
+    if ($dark) {$impossible = true; break;}
