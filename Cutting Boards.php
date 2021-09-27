@@ -10,3 +10,4 @@ for($z=0;$z<$T;$z++){
     $MN=fgets($fp);
     $explode=explode(" ",$MN);
     $M=$explode[0];
+    $N=(int)$explode[1];
