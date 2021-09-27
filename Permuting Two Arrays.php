@@ -10,3 +10,4 @@ for( $i = 0; $i < $tests; $i++ )
     rsort($b);
     $r = true;
     foreach( $a as $k => $v )
+    {
