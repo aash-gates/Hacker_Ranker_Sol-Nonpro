@@ -13,3 +13,4 @@ for($z=0;$z<$T;$z++){
     $N=(int)$explode[1];
 
     $Y=explode(" ",str_replace(PHP_EOL,"",fgets($fp)));
+    $X=explode(" ",str_replace(PHP_EOL,"",fgets($fp)));
