@@ -12,3 +12,4 @@ for($i = 0; $i < $amount; $i++) {
     fscanf(STDIN, "%d %d\n", $a, $b);
     $custs[$i+1] = ($i+1) . '|' . ($a+$b);
 }
+uasort($custs, function($a, $b){
