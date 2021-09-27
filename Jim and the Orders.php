@@ -14,3 +14,4 @@ for($i = 0; $i < $amount; $i++) {
 }
 uasort($custs, function($a, $b){
     $aArr = explode('|', $a);
+    $bArr = explode('|', $b);
