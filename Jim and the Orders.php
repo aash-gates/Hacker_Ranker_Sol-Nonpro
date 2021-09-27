@@ -15,3 +15,5 @@ for($i = 0; $i < $amount; $i++) {
 uasort($custs, function($a, $b){
     $aArr = explode('|', $a);
     $bArr = explode('|', $b);
+    if ($aArr[1] > $bArr[1]) {
+        return 1;
