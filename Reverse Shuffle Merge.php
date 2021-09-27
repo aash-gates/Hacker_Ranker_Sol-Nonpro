@@ -9,4 +9,6 @@ for ($i = 0; $i < $strLength; $i++) {
 
 $freq = array_count_values($S);
 array_walk($freq, function (&$val) { $val /= 2; });
+$freqSeen = array_combine(array_keys($freq), array_fill(0, count($freq), 0));
 $written = $freqSeen;
+$nextToUse = $freqSeen;
