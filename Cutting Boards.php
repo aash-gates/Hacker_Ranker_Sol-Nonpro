@@ -26,3 +26,4 @@ for($z=0;$z<$T;$z++){
         if(sizeof($Y)&&sizeof($X)){
             if($Y[sizeof($Y)-1]>$X[sizeof($X)-1]){
                 $cy++;
+                $count+=$cx*$Y[sizeof($Y)-1];
