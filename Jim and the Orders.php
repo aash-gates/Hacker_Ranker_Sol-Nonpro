@@ -11,3 +11,4 @@ for($i = 0; $i < $amount; $i++) {
     $custs[$i+1] = 0;
     fscanf(STDIN, "%d %d\n", $a, $b);
     $custs[$i+1] = ($i+1) . '|' . ($a+$b);
+}
