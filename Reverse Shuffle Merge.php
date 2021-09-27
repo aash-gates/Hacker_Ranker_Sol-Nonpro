@@ -34,3 +34,5 @@ while (strlen($out) != count($S)/2) {
         $next_bottleneck++;
     }
 
+    $nextChar = $minLetter;
+
