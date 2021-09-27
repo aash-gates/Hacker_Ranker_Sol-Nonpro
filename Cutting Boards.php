@@ -22,3 +22,4 @@ for($z=0;$z<$T;$z++){
     
  
     while(sizeof($Y)||sizeof($X)){
+        $count=$count%$modulo;
