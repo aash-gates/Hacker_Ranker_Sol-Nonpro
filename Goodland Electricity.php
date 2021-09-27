@@ -14,3 +14,4 @@ while ($needLight < $n && !$impossible) {
             $dark = false;
             $needLight = $i + $k;
             $answer++;
+            break;
