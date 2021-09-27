@@ -8,3 +8,5 @@ for ($i = 0; $i < $strLength; $i++) {
 }
 
 $freq = array_count_values($S);
+array_walk($freq, function (&$val) { $val /= 2; });
+$written = $freqSeen;
