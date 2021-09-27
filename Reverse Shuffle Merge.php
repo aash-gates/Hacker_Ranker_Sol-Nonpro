@@ -61,3 +61,5 @@ while (strlen($out) != count($S)/2) {
     $lastPos = $strPos+1;
 
 }
+
+echo $out;
