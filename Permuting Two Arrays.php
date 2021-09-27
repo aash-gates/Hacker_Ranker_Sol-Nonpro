@@ -7,3 +7,4 @@ for( $i = 0; $i < $tests; $i++ )
     $a = array_map('intval', explode(' ', fgets($_fp)));
     $b = array_map('intval', explode(' ', fgets($_fp)));
     sort($a);
+    rsort($b);
