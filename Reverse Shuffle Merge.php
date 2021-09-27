@@ -57,3 +57,5 @@ while (strlen($out) != count($S)/2) {
         $written[chr($nextChar + 97)]++;
         $nextToUse[chr($nextChar + 97)]++;
     } while ($written[chr($nextChar + 97)] < $needs[$strPos]);
+
+    $lastPos = $strPos+1;
