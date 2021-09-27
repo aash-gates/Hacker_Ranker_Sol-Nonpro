@@ -26,3 +26,5 @@ ksort($freq);
 $minLetter = abs(ord(key($freq)) - 97);
 $next_bottleneck = 0;
 $lastPos = 0;
+$out = '';
+
