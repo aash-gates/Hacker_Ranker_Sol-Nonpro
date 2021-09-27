@@ -11,3 +11,4 @@ for($z=0;$z<$T;$z++){
     $explode=explode(" ",$MN);
     $M=$explode[0];
     $N=(int)$explode[1];
+
