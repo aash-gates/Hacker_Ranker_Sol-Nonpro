@@ -6,3 +6,5 @@ $positions = [];
 for ($i = 0; $i < $strLength; $i++) {
     $positions[$S[$i]][] = $i;
 }
+
+$freq = array_count_values($S);
