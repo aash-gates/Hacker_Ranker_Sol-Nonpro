@@ -16,3 +16,5 @@ $needs = [];
 for ($j = $strLength-1; $j >= 0; $j--) {
     if ($freqSeen[$S[$j]] < $freq[$S[$j]]) {
         $needs[$j] = $freq[$S[$j]] - $freqSeen[$S[$j]];
+    } else {
+        $needs[$j] = 0;
