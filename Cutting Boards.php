@@ -44,3 +44,4 @@ for($z=0;$z<$T;$z++){
                 unset($X[sizeof($X)-1]);
             } 
         }
+    }
