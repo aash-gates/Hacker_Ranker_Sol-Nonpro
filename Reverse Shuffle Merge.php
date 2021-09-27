@@ -22,3 +22,5 @@ for ($j = $strLength-1; $j >= 0; $j--) {
     $freqSeen[$S[$j]]++;
 }
 
+ksort($freq);
+$minLetter = abs(ord(key($freq)) - 97);
