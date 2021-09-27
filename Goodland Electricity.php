@@ -12,3 +12,4 @@ while ($needLight < $n && !$impossible) {
     for ($i = min($n - 1, $needLight + $k - 1); $i >= max(0, $needLight - $k + 1); $i--) {
         if ($arr[$i] && $dark) {
             $dark = false;
+            $needLight = $i + $k;
