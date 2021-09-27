@@ -16,3 +16,4 @@ while ($needLight < $n && !$impossible) {
             $answer++;
             break;
         }
+    }
