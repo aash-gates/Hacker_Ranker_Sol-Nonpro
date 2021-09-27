@@ -30,3 +30,4 @@ for($z=0;$z<$T;$z++){
                 unset($Y[sizeof($Y)-1]);
             } else {
                 $cx++;
+                $count+=$cy*$X[sizeof($X)-1];
