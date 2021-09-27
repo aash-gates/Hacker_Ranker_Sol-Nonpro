@@ -9,3 +9,4 @@ $answer = 0;
 $impossible = false;
 while ($needLight < $n && !$impossible) {
     $dark = true;
+    for ($i = min($n - 1, $needLight + $k - 1); $i >= max(0, $needLight - $k + 1); $i--) {
