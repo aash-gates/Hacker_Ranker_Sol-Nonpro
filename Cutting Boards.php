@@ -18,3 +18,4 @@ for($z=0;$z<$T;$z++){
     sort($Y);
     sort($X);
     $cx=1;
+    $cy=1;
