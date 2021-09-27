@@ -21,3 +21,4 @@ for($z=0;$z<$T;$z++){
     $cy=1;
     
  
+    while(sizeof($Y)||sizeof($X)){
