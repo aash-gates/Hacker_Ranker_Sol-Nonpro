@@ -8,3 +8,4 @@ for( $i = 0; $i < $tests; $i++ )
     $b = array_map('intval', explode(' ', fgets($_fp)));
     sort($a);
     rsort($b);
+    $r = true;
