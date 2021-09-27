@@ -13,3 +13,4 @@ while ($needLight < $n && !$impossible) {
         if ($arr[$i] && $dark) {
             $dark = false;
             $needLight = $i + $k;
+            $answer++;
