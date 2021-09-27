@@ -35,3 +35,4 @@ for($z=0;$z<$T;$z++){
             }
         } else {
             if(sizeof($Y)){
+                $cy++;
