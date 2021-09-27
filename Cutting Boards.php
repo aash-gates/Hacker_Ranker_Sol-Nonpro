@@ -16,3 +16,4 @@ for($z=0;$z<$T;$z++){
     $X=explode(" ",str_replace(PHP_EOL,"",fgets($fp)));
     
     sort($Y);
+    sort($X);
