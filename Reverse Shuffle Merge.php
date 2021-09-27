@@ -52,3 +52,5 @@ while (strlen($out) != count($S)/2) {
         $lastPos++;
     }
 
+    do {
+        $out .= chr($nextChar + 97);
