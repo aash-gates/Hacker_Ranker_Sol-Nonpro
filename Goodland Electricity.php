@@ -20,3 +20,4 @@ while ($needLight < $n && !$impossible) {
     if ($dark) {$impossible = true; break;}
 }
 
+echo $impossible ? '-1' : $answer;
