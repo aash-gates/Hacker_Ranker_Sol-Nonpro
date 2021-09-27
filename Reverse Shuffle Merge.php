@@ -41,4 +41,6 @@ while (strlen($out) != count($S)/2) {
         $nextChar++;
         if (!isset($written[chr($nextChar+97)])) {
             $nextChar++;
+            continue;
         }
+    }
