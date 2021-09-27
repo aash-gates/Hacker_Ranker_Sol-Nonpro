@@ -20,3 +20,4 @@ uasort($custs, function($a, $b){
     } elseif ($aArr[1] < $bArr[1]) {
         return -1;
     } elseif ($aArr[0] > $bArr[0]) {
+        return 1;
