@@ -5,3 +5,4 @@ $amount = 0;
 
 fscanf(STDIN, "%d\n", $amount);
 
+$custs = array();
