@@ -7,3 +7,4 @@ $T=(int)fgets($fp);
 
 for($z=0;$z<$T;$z++){
     $count=0;
+    $MN=fgets($fp);
