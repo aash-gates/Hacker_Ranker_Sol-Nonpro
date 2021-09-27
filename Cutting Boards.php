@@ -36,3 +36,4 @@ for($z=0;$z<$T;$z++){
         } else {
             if(sizeof($Y)){
                 $cy++;
+                $count+=$cx*$Y[sizeof($Y)-1];
