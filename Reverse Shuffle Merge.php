@@ -20,3 +20,5 @@ for ($j = $strLength-1; $j >= 0; $j--) {
         $needs[$j] = 0;
     }
     $freqSeen[$S[$j]]++;
+}
+
