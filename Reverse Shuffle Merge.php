@@ -40,3 +40,5 @@ while (strlen($out) != count($S)/2) {
         $positions[chr($nextChar+97)][$nextToUse[chr($nextChar+97)]] > $next_bottleneck) {
         $nextChar++;
         if (!isset($written[chr($nextChar+97)])) {
+            $nextChar++;
+        }
