@@ -13,3 +13,4 @@ for( $i = 0; $i < $tests; $i++ )
     {
         if( $v + $b[$k] < $K )
             $r = false;
+    }
