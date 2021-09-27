@@ -8,3 +8,4 @@ fscanf(STDIN, "%d\n", $amount);
 $custs = array();
 
 for($i = 0; $i < $amount; $i++) {
+    $custs[$i+1] = 0;
