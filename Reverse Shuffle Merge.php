@@ -12,3 +12,5 @@ array_walk($freq, function (&$val) { $val /= 2; });
 $freqSeen = array_combine(array_keys($freq), array_fill(0, count($freq), 0));
 $written = $freqSeen;
 $nextToUse = $freqSeen;
+$needs = [];
+for ($j = $strLength-1; $j >= 0; $j--) {
