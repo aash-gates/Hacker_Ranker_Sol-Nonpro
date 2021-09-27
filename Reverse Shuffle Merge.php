@@ -44,3 +44,5 @@ while (strlen($out) != count($S)/2) {
             continue;
         }
     }
+
+    $strPos = $positions[chr($nextChar+97)][$nextToUse[chr($nextChar+97)]];
