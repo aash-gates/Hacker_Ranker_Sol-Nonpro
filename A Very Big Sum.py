@@ -1,5 +1,4 @@
 
-import math
 import sys
 ans = 0
 for linenum, testnum in enumerate(sys.stdin):
