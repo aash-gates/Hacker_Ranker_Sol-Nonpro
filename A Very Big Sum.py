@@ -1,4 +1,3 @@
-
 import sys
 for linenum, testnum in enumerate(sys.stdin):
     if linenum == 1:
